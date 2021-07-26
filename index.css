@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: GenWanMin-SB;
+    src: url(./ttc/GenWanMin-SB.ttc);
+}
+
+@font-face{
+    font-family: LucidaGrande;
+    src: url(./ttc/LucidaGrande.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    overflow: hidden;
+    height: auto;
+    font-family: "GenWanMin-SB";
+    letter-spacing: 8px;
+    text-indent: 8px;
+    background-color: #0E1E3C;
+    color: white;
+}
+
