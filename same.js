@@ -9,22 +9,12 @@ function pageScroll() {
     if(document.documentElement.scrollTop == 0) clearTimeout(scrolldelay);
 }
 
+function menuIn(){
+    sidebar.style.display = "block";
+}
 
-
-// menu.onclick = function (){
-//     alert("hi");
-// }
-
-
-
-// function(){
-//     sidebar.style.width = "100%";
-//     sidebar.style.display = "block";
-// }
-
-// function(){
-//     sidebar.style.width = "0";
-//     sidebar.style.display = "none";
-// }
+function menuOut(){
+    sidebar.style.display = "none";
+}
 
 
