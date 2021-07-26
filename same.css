@@ -112,10 +112,11 @@ body{
     font-size:14px;
 }
 
-.top{
+#top{
     position: absolute;
     bottom: 20%;
     right: 5%;
+    cursor: pointer;
 }
 
 #line{
@@ -191,7 +192,7 @@ body{
         display: none;
     }
 
-    .top{
+    #top{
         width: 25px;
     }
 
@@ -328,7 +329,7 @@ body{
         margin-top:100px;
     }
 
-    .top{
+    #top{
         width: 20px;
         bottom: 10%;
     }
