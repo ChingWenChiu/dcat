@@ -67,14 +67,6 @@ body{
     display: none;
 }
 
-.com_menu{
-    height: 120px;
-    position: fixed;
-    margin-left: 15px;
-    margin-top: 80px;
-    z-index: 1;
-}
-
 #sidebar{
     background-image: url(./photo/menu_bg.png);
     background-size: 100%;
@@ -83,7 +75,6 @@ body{
     position: fixed;
     top: 20%;
     display: none;
-    transition: width 1s;
 }
 
 #sidebar a{
@@ -93,6 +84,16 @@ body{
     font-size: 24px;
     text-decoration: none;
     letter-spacing: 3px;
+}
+
+#com_menu{
+    width: 35px;
+    height: 125px;
+    line-height: 375px;
+    position: fixed;
+    left: 10px;
+    top: 20vh;
+    z-index: 1;
 }
 
 .empty{
@@ -316,7 +317,8 @@ body{
     }
     
     .footerTop p{
-        font-size:18px;
+        font-size:14px;
+        letter-spacing: 5px;
     }
     
     .footerTop p:nth-last-child(3){
