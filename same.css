@@ -365,15 +365,19 @@ body{
     }
 
     .overlay a{
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom: 0;
-        height: 45px;
+        height: 40px;
     }
 
     .about a:not(:first-child),.aboutworks a:not(:first-child){
-        font-size: 24px;
+        font-size: 20px;
         position: relative;
         bottom: 40px;
+    }
+
+    .about img,.aboutworks img{
+        width: 200px;
     }
     
     .footerTop p{
