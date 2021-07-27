@@ -3,11 +3,17 @@ var menu = document.getElementById("menu");
 var top = document.getElementById("top");
 var com_menu = document.getElementById("com_menu");
 
-function pageScroll() {
-    window.scrollBy(0,-150);
-    scrolldelay = setTimeout("pageScroll()",100);
-    if(document.documentElement.scrollTop == 0) clearTimeout(scrolldelay);
-}
+// function pageScroll() {
+//     window.scrollBy(0,-150);
+//     scrolldelay = setTimeout("pageScroll()",100);
+//     if(document.documentElement.scrollTop == 0) clearTimeout(scrolldelay);
+// }
+
+$(document).ready(function() {
+    $('#top').click(function(){
+        $('html,body').animate({scrollTop: $('#com_nav').offset().top-0},500);
+    });
+});
 
 function menuIn(){
     com_menu.style.height = "375px";
@@ -28,5 +34,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-
-
