@@ -47,7 +47,40 @@
 
         <nav id="phone_nav">
 
-            <img id="phone_menu" src="./photo/menu_phone.png" alt="menu" width="150px">
+            <div id="myNav" class="phone_menu overlay">
+                
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="overlay-content">
+                    <a href="index.html" style="margin-bottom:30px;">首頁</a>
+
+                    <div class="about" style="position:relative;">
+
+                        <a href="about.html" style="margin-bottom:0;">關於展覽</a>
+
+                        <img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;">
+                    
+                        <a href="#">展覽理念</a>
+                        <a href="#">展覽地點</a>
+                        <a href="#">籌備團隊</a>
+                        <a href="#">班導師</a>
+
+                    </div>
+                    
+                    <div class="aboutworks" style="position:relative;">
+                        <a href="aboutworks.html"style="margin-bottom:0;">關於作品</a>
+                        <img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;">
+                        
+                        <a href="#">多媒體</a>
+                        <a href="#" style="margin-bottom:30px;">論文</a>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <img id="phone_menu" src="./photo/menu_phone.png" alt="menu" width="150px" onclick="openNav()">
 
             <img id="phone_logo" src="./photo/logo.png" alt="logo" width="80px">
 
