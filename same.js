@@ -10,12 +10,15 @@ $(document).ready(function() {
 });
 
 function menuIn(){
+    sidebar.style.width = "200px";
+    sidebar.style.height = "375px";
+    sidebar.style.opacity = "1";
     sidebar.style.display = "block";
     com_menu.style.pointerEvents = "none";
 }
 
 function menuOut(){
-    sidebar.style.display = "none";
+    sidebar.style.opacity = "0";
     com_menu.style.pointerEvents = "auto";
 }
 

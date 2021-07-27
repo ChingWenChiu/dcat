@@ -76,6 +76,8 @@ body{
     top: 20%;
     display: none;
     z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 #sidebar a{
@@ -408,6 +410,7 @@ body{
 
     #FB{
         width: 30px;
+        margin-top: 10px;
     }
 
     #line{
