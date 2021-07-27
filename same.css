@@ -195,7 +195,7 @@ body{
     
     .overlay-content{
         position: relative;
-        top:0%;
+        top:0;
         width:100%;
         text-align: center;
     }
@@ -204,20 +204,28 @@ body{
         text-decoration: none;
         font-size: 36px;
         color: #ffffff;
-        display: block;
         transition: 0.3s;
-        height: 50px;
         margin-bottom: 10px;
     }
-    
-    .overlay a:hover,.overlay a:focus{
-        color: #f1f1f1;
+
+    .overlay p {
+        height: 50px;
+        position: relative;
+        bottom: 100px;
     }
 
-    .about a:not(:first-child),.aboutworks a:not(:first-child){
-        font-size: 30px;
+    .about{
+        height: 350px;
         position: relative;
-        bottom: 40px;
+        bottom: 50px;
+    }
+
+    #font-size{
+        font-size: 30px;
+    }
+    
+    .overlay a:focus{
+        color: #f1f1f1;
     }
 
     #phone_logo{
@@ -370,10 +378,19 @@ body{
         height: 40px;
     }
 
-    .about a:not(:first-child),.aboutworks a:not(:first-child){
-        font-size: 20px;
+    .overlay p {
+        height: 30px;
         position: relative;
-        bottom: 40px;
+        bottom: 100px;
+    }
+
+    .about{
+        height: 190px;
+        bottom: 75px;
+    }
+
+    #font-size{
+        font-size: 20px;
     }
 
     .about img,.aboutworks img{
