@@ -263,6 +263,10 @@ body{
         margin-right:10px;
     }
 
+    #footerUpRight_Right{
+        margin-right:20px;
+    }
+
     #footerUpRight_Right span,#footerDownLeft_Right span{
         display: block;
         font-size: 22px;
@@ -366,7 +370,7 @@ body{
 
     #footerUpRight_Right,#footerDownLeft_Right{
         margin-top: 18px;
-        margin-left: 15px;
+        margin-left: 10px;
     }
 
     #footerUpRight_Right span,#footerDownLeft_Right span{
