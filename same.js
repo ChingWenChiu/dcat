@@ -2,6 +2,7 @@ var sidebar = document.getElementById("sidebar");
 var menu = document.getElementById("menu");
 var top = document.getElementById("top");
 var com_menu = document.getElementById("com_menu");
+var myAnchor = document.getElementsByClassName("myAnchor");
 
 $(document).ready(function() {
     $('#top').click(function(){
@@ -10,10 +11,8 @@ $(document).ready(function() {
 });
 
 function menuIn(){
-    sidebar.style.width = "200px";
-    sidebar.style.height = "375px";
-    sidebar.style.opacity = "1";
     sidebar.style.display = "block";
+    sidebar.style.opacity = "1";
     com_menu.style.pointerEvents = "none";
 }
 
@@ -28,4 +27,9 @@ function openNav() {
  
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+}
+
+function closeSide() {
+    sidebar.style.opacity = "0";
+    com_menu.style.pointerEvents = "auto";
 }
