@@ -2,12 +2,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: GenWanMin-SB;
-    src: url(./ttc/GenWanMin-SB.woff2);
-    font-display: swap;
-}
-
 @font-face{
     font-family: LucidaGrande;
     src: url(./ttc/LucidaGrande.woff2);
@@ -79,7 +73,6 @@ body{
     height: 375px;
     position: fixed;
     top: 20%;
-    display: none;
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -98,8 +91,8 @@ body{
 }
 
 #com_menu{
-    width: 35px;
-    height: 125px;
+    width: 200px;
+    height: 375px;
     line-height: 375px;
     position: fixed;
     left: 10px;
