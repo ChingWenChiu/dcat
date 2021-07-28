@@ -20,7 +20,7 @@ body{
 .container{
     overflow: hidden;
     height: auto;
-    font-family: "GenWanMin-SB";
+    /* font-family: "GenWanMin-SB"; */
     letter-spacing: 8px;
     text-indent: 8px;
     background-color: #0E1E3C;

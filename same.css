@@ -5,6 +5,7 @@
 @font-face {
     font-family: GenWanMin-SB;
     src: url(./ttc/GenWanMin-SB.woff2);
+    font-display: swap;
 }
 
 @font-face{
@@ -20,7 +21,7 @@ body{
 .container{
     overflow: hidden;
     height: auto;
-    font-family: "GenWanMin-SB","simsun";
+    font-family: "Noto Serif TC";
     letter-spacing: 8px;
     text-indent: 8px;
     background-color: #0E1E3C;
