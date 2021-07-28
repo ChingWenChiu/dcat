@@ -5,6 +5,7 @@
 @font-face {
     font-family: GenWanMin-SB;
     src: url(./ttc/GenWanMin-SB.woff2);
+    unicode-range: U+570B;
 }
 
 @font-face{
