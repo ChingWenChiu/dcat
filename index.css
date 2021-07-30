@@ -11,12 +11,17 @@ h1{
     font-family: "Noto Serif TC";
     text-align: center;
     font-size: 28px;
+    clear: both;
 }
 
 .com_game{
     height: 93vh;
     position: relative;
     margin-bottom: 50px;
+}
+
+.phone_game{
+    display: none;
 }
 
 #wood_up,#wood_down{
@@ -186,5 +191,143 @@ h1{
 
 /* -----------------手機版----------------- */
 @media screen and (max-width:1024px){
+    .com_game{
+        display: none;
+    }
 
+    .phone_game{
+        display: block;
+        height: 100vh;
+        position: relative;
+        bottom: 140px;
+    }
+
+    h1{
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .phone_woodUp,.phone_woodDown{
+        width: 80%;
+        display: flex;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .phone_wood{
+        justify-content: center;
+        width: 16.66%;
+    }
+
+    .phone_wood3{
+        background: url(/photo/index/phone_wood_3字.png) no-repeat;
+        background-size: 50px;
+        background-position: top;
+    }
+
+    .phone_wood4{
+        background: url(/photo/index/phone_wood_4字.png) no-repeat;
+        background-size: 50px;
+        background-position: top;
+    }
+
+    .phone_wood5{
+        background: url(/photo/index/phone_wood_5字.png) no-repeat;
+        background-size: 50px;
+        background-position: top;
+    }
+
+    .phone_wood6{
+        background: url(/photo/index/phone_wood_6字.png) no-repeat;
+        background-size: 50px;
+        background-position: top;
+    }
+
+    .phone_wood7{
+        background: url(/photo/index/phone_wood_7字.png) no-repeat;
+        background-size: 50px;
+        background-position: top;
+    }
+
+    .phone_wood p{
+        writing-mode: vertical-lr;
+        font-size: 22px;
+        color: #614728;
+        margin: 0 auto;
+        position: relative;
+        top: 5px;
+    }
+
+    .phone_woodDown{
+        position: relative;
+        bottom: 50px;
+    }
+
+    #phone_woodDown{
+        background-position: center;
+    }
+
+    #woodDown_1,#woodDown_2,#woodDown_3,#woodDown_4,#woodDown_5,#woodDown_6,#woodDown_7{
+        position:relative;
+    }
+
+    #woodDown_1{
+        top:45px;
+    }
+
+    #woodDown_2,#woodDown_4{
+        top:60px;
+    }
+
+    #woodDown_3{
+        top:15px;
+    }
+
+    #woodDown_5{
+        top:30px;
+    }
+
+    #woodDown_6,#woodDown_7{
+        top:-1px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:500px){
+    .phone_woodUp,.phone_woodDown{
+        width: 95%;
+    }
+
+    .phone_woodDown{
+        position: relative;
+        bottom: 100px;
+    }
+
+    .phone_wood3,.phone_wood4,.phone_wood5,.phone_wood6,.phone_wood7{
+        background-size: 40px;
+    }
+
+    .phone_wood p{
+        font-size: 18px;
+        top: 0px;
+    }
+
+    #woodDown_1{
+        top:55px;
+    }
+
+    #woodDown_2,#woodDown_4{
+        top:68px;
+    }
+
+    #woodDown_3{
+        top:30px;
+    }
+
+    #woodDown_5{
+        top:45px;
+    }
 }
