@@ -1,24 +1,184 @@
-*{
-    box-sizing: border-box;
+a{
+    text-decoration: none;
 }
 
-@font-face{
-    font-family: LucidaGrande;
-    src: url(./ttc/LucidaGrande.ttf);
+#com_nav{
+    margin-bottom:0;
+    height: 90px;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    overflow: hidden;
-    height: auto;
+h1{
     font-family: "Noto Serif TC";
-    letter-spacing: 8px;
-    text-indent: 8px;
-    background-color: #0E1E3C;
-    color: white;
+    text-align: center;
+    font-size: 28px;
 }
 
+.com_game{
+    height: 93vh;
+    position: relative;
+}
+
+#wood_up,#wood_down{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 220px;
+}
+
+#wood_down{
+    width: 70%;
+}
+
+.wood{
+    width: 14.3%;
+    background: url(./photo/index/wood_1.png) no-repeat;
+    background-size: 65px;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.wood_down{
+    width: 16.66%;
+}
+
+.wood p{
+    position: absolute;
+    writing-mode: vertical-lr;
+    bottom: 18px;
+    letter-spacing: 4px;
+    height: 150px;
+    margin: 0;
+    left: 47%;
+}
+
+/* --------------------木板翻面---------------------- */
+#wood_1:hover,#wood_2:hover,#wood_3:hover,#wood_4:hover,#wood_5:hover,#wood_6:hover,#wood_7:hover,#wood_8:hover,#wood_9:hover,#wood_10:hover,#wood_11:hover,#wood_12:hover,#wood_13:hover,#wood_14:hover > .wood{
+    background: url(./photo/index/wood_2.png) no-repeat;
+    background-size: 65px;
+    background-position: center;
+}
+
+#wood_1-2,#wood_2-2,#wood_3-2,#wood_4-2,#wood_5-2,#wood_6-2,#wood_7-2,#wood_8-2,#wood_9-2,#wood_10-2,#wood_11-2,#wood_12-2,#wood_13-2{
+    display: none;
+}
+
+#wood_1:hover > #wood_1-1{
+    display: none;
+}
+
+#wood_1:hover > #wood_1-2{
+    display: block;
+}
+
+#wood_2:hover > #wood_2-1{
+    display: none;
+}
+
+#wood_2:hover > #wood_2-2{
+    display: block;
+}
+
+#wood_3:hover > #wood_3-1{
+    display: none;
+}
+
+#wood_3:hover > #wood_3-2{
+    display: block;
+}
+
+#wood_4:hover > #wood_4-1{
+    display: none;
+}
+
+#wood_4:hover > #wood_4-2{
+    display: block;
+}
+
+#wood_5:hover > #wood_5-1{
+    display: none;
+}
+
+#wood_5:hover > #wood_5-2{
+    display: block;
+}
+
+#wood_6:hover > #wood_6-1{
+    display: none;
+}
+
+#wood_6:hover > #wood_6-2{
+    display: block;
+}
+
+#wood_7:hover > #wood_7-1{
+    display: none;
+}
+
+#wood_7:hover > #wood_7-2{
+    display: block;
+}
+
+#wood_8:hover > #wood_8-1{
+    display: none;
+}
+
+#wood_8:hover > #wood_8-2{
+    display: block;
+}
+
+#wood_9:hover > #wood_9-1{
+    display: none;
+}
+
+#wood_9:hover > #wood_9-2{
+    display: block;
+}
+
+#wood_10:hover > #wood_10-1{
+    display: none;
+}
+
+#wood_10:hover > #wood_10-2{
+    display: block;
+}
+
+#wood_11:hover > #wood_11-1{
+    display: none;
+}
+
+#wood_11:hover > #wood_11-2{
+    display: block;
+}
+
+#wood_12:hover > #wood_12-1{
+    display: none;
+}
+
+#wood_12:hover > #wood_12-2{
+    display: block;
+}
+
+#wood_13:hover > #wood_13-1{
+    display: none;
+}
+
+#wood_13:hover > #wood_13-2{
+    display: block;
+}
+/* --------------------木板翻面---------------------- */
+
+#wood_1{
+    position: relative;
+}
+
+#wood_1-1{
+    position: absolute;
+    left: 43%;
+}
+
+#wood_1-2{
+    position: absolute;
+    right: 5%;
+}
