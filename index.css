@@ -182,3 +182,8 @@ h1{
     position: absolute;
     right: 5%;
 }
+
+/* -----------------手機版----------------- */
+@media screen and (max-width:1024px){
+    
+}

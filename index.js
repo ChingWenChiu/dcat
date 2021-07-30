@@ -11,10 +11,5 @@ function back(){
     ramen.style.bottom = "20px";
 }
 
-
-// for(i=0 ; i < wood.length; i++)
-    
-// wood[i].onclick = function(){
-//     wood[i].firstChild.src = "./photo/index/wood_2.png";
-// }
+document.getElementById("wood_1").addEventListener("touchstart", touchStart, false);
 
