@@ -16,6 +16,7 @@ h1{
 .com_game{
     height: 93vh;
     position: relative;
+    margin-bottom: 50px;
 }
 
 #wood_up,#wood_down{
@@ -185,5 +186,5 @@ h1{
 
 /* -----------------手機版----------------- */
 @media screen and (max-width:1024px){
-    
+
 }
