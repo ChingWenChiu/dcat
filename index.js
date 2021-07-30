@@ -11,5 +11,3 @@ function back(){
     ramen.style.bottom = "20px";
 }
 
-document.getElementById("wood_1").addEventListener("touchstart", touchStart, false);
-

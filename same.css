@@ -161,7 +161,7 @@ body{
 /* -------------------手機版------------------ */
 
 @media screen and (max-width:1024px){
-    #com_nav{
+    #com_nav, #com_menu,#sidebar{
         display: none;
     }
 
