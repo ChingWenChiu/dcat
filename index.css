@@ -422,8 +422,8 @@ iframe{
     }
 
     .video{
-        width: 256px;
-        height: 144px;
+        width: 288px;
+        height: 162px;
         margin: 0 auto 25px;
     }
 }
