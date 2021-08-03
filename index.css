@@ -189,6 +189,25 @@ h1{
     right: 5%;
 }
 
+.videobox{
+    background: url(./photo/index/cloud.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 120%;
+}
+
+.video{
+    width: 560px;
+    height: 315px;
+    margin: 50px auto 150px;
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
 /* -----------------手機版----------------- */
 @media screen and (max-width:1024px){
     .com_game{
@@ -197,7 +216,7 @@ h1{
 
     .phone_game{
         display: block;
-        height: 100vh;
+        height: 600px;
         position: relative;
         bottom: 140px;
     }
@@ -352,7 +371,10 @@ h1{
 }
 
 @media screen and (max-width:768px){
-
+    .video{
+        width: 400px;
+        height: 225px;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -392,5 +414,16 @@ h1{
 
     #woodDown-6{
         margin-top:10px;
+    }
+
+    .videobox{
+        position: relative;
+        bottom: 50px;
+    }
+
+    .video{
+        width: 240px;
+        height: 135px;
+        margin: 0 auto 25px;
     }
 }
