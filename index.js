@@ -11,3 +11,8 @@ function back(){
     ramen.style.bottom = "20px";
 }
 
+function myFunction1(){
+    var popup1 =  document.getElementById("myPopup1");
+    popup1.style.display = "block";
+}
+
