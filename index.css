@@ -296,7 +296,7 @@ h1{
     }
 
     .myPopup{
-        /* display: none; */
+        display: none;
         transition: 0.3s;
         width: 100vw;
         height: 100vh;
@@ -339,6 +339,14 @@ h1{
         font-size:22px;
         width: 100%;
         margin: 0 auto;
+    }
+
+    .p_click{
+        cursor: pointer;
+    }
+
+    .p_click:hover{
+        color: white;
     }
       
 }

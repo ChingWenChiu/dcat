@@ -1,5 +1,6 @@
 var ramen = document.getElementById("ramen");
 var woodd = document.getElementsByClassName("wood_up");
+var popup1 =  document.getElementById("myPopup1");
 
 function move(){
     ramen.style.right = "-30px";
@@ -12,7 +13,10 @@ function back(){
 }
 
 function myFunction1(){
-    var popup1 =  document.getElementById("myPopup1");
     popup1.style.display = "block";
+}
+
+function close1(){
+    popup1.style.display = "none";
 }
 
