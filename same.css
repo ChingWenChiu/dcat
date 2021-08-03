@@ -187,7 +187,6 @@ body{
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
         top: 0;
         left: 0;
         background-color: rgb(180, 144, 105,0.9);
