@@ -158,6 +158,12 @@ body{
     display: none;
 }
 
+/* ------------沒有贊助商要加---------------- */
+.com_footer{
+    height: 180px;
+    padding-bottom: 80px;
+}
+
 /* -------------------手機版------------------ */
 
 @media screen and (max-width:1024px){
