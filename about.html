@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="same.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="./photo/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+    <title>肝掰</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <nav id="com_nav"> 
+
+            <div class="nav_left">
+
+                <a href="index.html"><img src="./photo/logo.png" alt="logo"></a>
+            
+            </div>
+
+            <div class="nav_right">
+
+                <div class="nav_about">
+
+                    <img src="./photo/fan.png" alt="fan" width="35px">
+
+                    <a href="about.html">關於展覽</a>
+
+                </div>
+
+                <div class="nav_about">
+
+                    <img src="./photo/fan.png" alt="fan" width="35px">
+
+                    <a href="aboutworks.html">關於作品</a>
+                    
+                </div>
+        
+            </div>
+
+        </nav>
+
+        <nav id="phone_nav">
+
+            <div id="myNav" class="phone_menu overlay">
+                
+                <a href="javascript:void(0)" onclick="closeNav()" style="margin-bottom:10px;position:relative;bottom:10px;">&times;</a>
+
+                <div class="overlay-content">
+                    <a href="index.html" style="position:relative;bottom:40px;">首頁</a>
+
+                    <div class="about">
+
+                        <a href="about.html" style="margin-bottom:10px;">關於展覽</a>
+
+                        <img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;">
+                    
+                        <p><a href="about.html#idea" id="font-size">展覽理念</a></p>
+                        <p><a href="about.html#place" id="font-size">展覽地點</a></p>
+                        <p><a href="about.html#team" id="font-size">籌備團隊</a></p>
+                        <p><a href="about.html#teachers" id="font-size">班導師</a></p>
+
+                    </div>
+                    
+                    <div class="aboutworks">
+                        <a href="aboutworks.html"style="margin-bottom:10px;">關於作品</a>
+                        <img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;">
+                        
+                        <p><a href="aboutworks.html#multimedia" id="font-size">多媒體</a></p>
+                        <p><a href="aboutworks.html#theses" id="font-size" style="margin-bottom:30px;">論文</a></p>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <img id="phone_menu" src="./photo/menu_phone.png" alt="menu" width="150px" onclick="openNav()">
+
+            <img id="phone_logo" src="./photo/logo.png" alt="logo" width="80px">
+
+        </nav>
+
+        <div class="empty"></div>
+
+        <div id="sidebar"  onmouseleave="menuOut();">
+
+            <a href="javascript:void(0)" onclick="closeSide()" style="position:relative;left:150px;top:10px;">&times;</a>
+
+            <a href="index.html" style="top:5%;">首頁</a>
+
+            <a href="about.html" style="top:20%;">關於展覽</a>
+            <img src="./photo/menu_line.png" width="100%" style="position: absolute;top:29%;left:15%;">
+            <a href="about.html#idea" style="top:33%;font-size:16px;">展覽理念</a>
+            <a href="about.html#place" style="top:41%;font-size:16px;">展覽地點</a>
+            <a href="about.html#team" style="top:49%;font-size:16px;">籌備團隊</a>
+            <a href="about.html#teachers" style="top:57%;font-size:16px;">班導師</a>
+
+            <a href="aboutworks.html" style="top:70%;">關於作品</a>
+            <img src="./photo/menu_line.png" width="100%" style="position: absolute;top:79%;left:15%;">
+            <a href="aboutworks.html#" style="top:82%;font-size:16px;">多媒體</a>
+            <a href="aboutworks.html#" style="top:90%;font-size:16px;">論文</a>
+
+        </div>
+
+        <div id="com_menu">
+
+            <img id="menu" onmouseenter="menuIn();" src="./photo/menu.png" alt="menu" width="25px">
+       
+        </div>
+
+        <div id="idea">
+
+            <img class="fans" src="./photo/about/展覽理念.png" width="60px">
+            <h1 style="display:inline;position:relative;left:5px;top:5px;">展覽理念</h1>
+            <img class="fans" src="./photo/about/展覽理念.png" width="60px">
+
+            <div class="idea">
+
+                <p>由普遍學生對於畢業製作的第一印象——</p>
+                <p>心力交瘁、耗時一年作為發想，<span class="br_500"><br></span>取名為《肝掰》，</p>
+                <p>意即展覽內皆為學生<span class="br"><br></span><span style="border-bottom:3px solid rgb(255, 222, 133);padding-bottom:5px;">「與自己的肝說掰掰」</span>後的成品，</p>
+                <p>並且結合日文諧音「乾杯」的意象：</p>
+                <p><span style="border-bottom:3px solid rgb(255, 222, 133);padding-bottom:5px;">工作到一段落，結束後放鬆的意義。</span></p>
+                <p>亦代表111級在傳科系四年生活的完結，</p>
+                <p>在即將各奔東西之際，<span style="border-bottom:3px solid rgb(255, 222, 133);padding-bottom:5px;"><span class="br"><br></span>最後一次全班一起乾一杯</span>。</p>
+        
+            </div>
+            
+            <img id="cloud" src="./photo/about/cloud.png" width="100%">
+
+        </div>
+
+        <div id="place">
+
+            <img class="fans" src="./photo/about/展覽理念.png" width="60px">
+            <h1 style="display:inline;position:relative;left:5px;top:5px;">展覽地點</h1>
+            <img class="fans" src="./photo/about/展覽理念.png" width="60px">
+            <h2 id="en-h2">ACCESS MAP</h2>
+
+            <div class="mapBox">
+
+                <div class="map">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2062.4935568649057!2d120.99699441323062!3d24.786588795503775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683611e7d11a8b%3A0x9d8d2713a6d09b34!2z5ZyL56uL5Lqk6YCa5aSn5a245rWp54S25ZyW5pu46aSo!5e0!3m2!1szh-TW!2stw!4v1628500930462!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    <div class="com_map_word">
+
+                        <img class="japan" src="./photo/footer.png" width="35px">
+                        <p style="font-size:22px;display:inline;position:relative;top:5px;">開幕茶會</p>
+                      
+                        <div style="position:relative;top:-25px;">
+                        
+                            <div style="width:60px;margin:0;display:inline-block;position:relative;top:-20px;">
+                                <p>時間</p>
+                                <p>地點</p>
+                            
+                            </div>
+            
+                            <div style="width:370px;display:inline-block;letter-spacing:5px;position:relative;top:42px;">
+            
+                                <span>2021年12月10日 8:00～17:00</span>
+                                <br><br>
+                                <span style="position:relative;top:-8px;left:6px;line-height:1.8;">新竹市東區大學路1001號<br>國立陽明交通大學浩然圖書館<br>B1國際會議廳</span>
+                            
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+
+                    <h3>開幕茶會</h3>
+
+                </div>
+
+                <div class="map" style="margin-right:20px;">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.917284951025!2d121.49948511484199!3d25.03688098397103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9a8bc1fe957%3A0x8004f7cdc87668e0!2z5Ymd55qu5a-u5ryU6Jed5buz!5e0!3m2!1szh-TW!2stw!4v1628501278242!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <img id="beer" src="./photo/about/啤酒.png" width="200px">
+
+                    <div class="com_map_word">
+
+                        <img class="japan" src="./photo/footer.png" width="35px">
+                        <p style="font-size:22px;display:inline;position:relative;top:5px;">正式展覽</p>
+                      
+                        <div style="position:relative;top:-20px;">
+                        
+                            <div style="width:60px;margin:0;display:inline-block;">
+
+                                <p>時間</p>
+                                <p>地點</p>
+                            
+                            </div>
+            
+                            <div style="width:370px;display:inline-block;letter-spacing:5px;position:relative;top:35px;">
+            
+                                <span style="letter-spacing:3px;">2021年12月17日至19日 8:00～17:00</span>
+                                <br><br>
+                                <span style="position:relative;top:-8px;left:6px;line-height:1.8;">臺北市萬華區康定路173巷<br>剝皮寮演藝廳</span>
+                            
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+
+                    <h3>正式展覽</h3>
+
+                </div>
+
+            </div>
+
+            <div class="phone_map_word">
+
+                <h2>開幕茶會</h2>
+                <img src="./photo/about/line.png" width="80%">
+                <p>2021年12月10日 8:00~17:00</p>
+                <p>新竹市東區大學路1001號<br>國立陽明交通大學浩然圖書館<br class="phone_map_word_br">B1國際會議廳</p>
+                <br>
+
+                <h2>正式展覽</h2>
+                <img src="./photo/about/line.png" width="80%">
+                <p>2021年12月17日至19日 8:00~17:00</p>
+                <p>台北市萬華區康定路173巷<br>剝皮寮演藝廳</p>
+
+        </div>
+
+
+        </div>
+
+
+        <div class="footerTop">
+
+            <p style="width:310px;margin:0 auto;">國立陽明交通大學</p>
+
+            <p>傳播與科技學系111級畢業成果展</p>
+
+            <a href="#"><img id="FB" src="./photo/fb.png" alt="FB" width="45px"></a>
+
+            <p style="font-family:LucidaGrande;letter-spacing:4px;margin-top:30px;">©NYCU DCAT. All rights reserved.</p>
+
+            <img id="top" src="./photo/top.png" width="30px">
+
+            <img id="line" src="./photo/line.png" width="100%">
+    
+        </div>
+
+        <footer id="footer" class="com_footer">
+
+            <div class="footerLeft" style="float:left;margin-left:25px;">
+
+                <img class="japan" src="./photo/footer.png" width="35px">
+                <p style="font-size:22px;display:inline;position: relative;top:3px;">開幕茶會</p>
+                <p class="footerTime">時間&nbsp;&nbsp;2021年12月10日 8:00-17:00</p>
+                <p class="footerTime">地點&nbsp;&nbsp;新竹市東區大學路1001號 國立陽明交通大學浩然圖書館 B1 國際會議廳</p>
+
+            </div>
+
+            <div class="footerRight" style="float:right;margin-right:50px;margin-left:25px;">
+
+                <img class="japan" src="./photo/footer.png" width="35px">
+                <p style="font-size:22px;display:inline;position: relative;top:3px;">正式展覽</p>
+                <p class="footerTime">時間&nbsp;&nbsp;2021年12月17日至12月19日 8:00~17:00</p>
+                <p class="footerTime">地點&nbsp;&nbsp;臺北市萬華區康定路173巷剝皮寮演藝廳</p>
+                    
+            </div>
+
+            <div class="sponsor">
+
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                
+            </div>
+
+            
+
+        </footer>
+
+        <footer class="phone_footer">
+
+            <div class="footerUp"> 
+
+                <div id="footerUpLeft">
+
+                    <img id="phone_footer" src="./photo/phone_footer.png" width="225px" style="float:left;">
+                
+                </div>
+    
+                <div id="footerUpRight">
+                    
+                    <div id="footerUpRight_Left">
+                        <p>時間</p>
+                        <p style="margin-top:42px;">地點</p>
+                    
+                    </div>
+    
+                    <div id="footerUpRight_Right">
+    
+                        <span>2021年12月10日 8:00～17:00</span>
+                        <br>
+                        <span>新竹市東區大學路1001號<br>國立陽明交通大學<br>浩然圖書館B1國際會議廳</span>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="footerDown">
+
+                <div id="footerDownLeft">
+                
+                    <div id="footerDownLeft_Left">
+                        <p>時間</p>
+                        <p style="margin-top:45px;">地點</p>
+                    
+                    </div>
+    
+                    <div id="footerDownLeft_Right">
+    
+                        <span>2021年12月17日至12月19日 8:00~17:00</span>
+                        <br>
+                        <span>台北市萬華區康定路173巷<br>剝皮寮演藝廳</span>
+                    
+                    </div>
+                    
+                </div>
+
+                <div id="footerDownRight">
+
+                    <img id="phone_footer2" src="./photo/phone_footer2.png" width="250px">
+                
+                </div>
+
+            </div>
+           
+            <div class="sponsor">
+
+                <a href="#" target="_blank"><img src="./photo/logo.png" style="margin-left: 0;"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                
+            </div>
+            
+        </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="same.js"></script>
+    
+</body>
+</html>

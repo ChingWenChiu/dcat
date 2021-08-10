@@ -1,0 +1,264 @@
+h1,h2,h3{
+    font-family: "Noto Serif TC";
+}
+
+#com_nav{
+    position: relative;
+    z-index: 1;
+}
+
+#idea{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    bottom: 135px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 135px;
+}
+
+.idea{
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0; 
+    border-radius: 20px;
+}
+
+#idea h1,#place h1{
+    font-size: 40px;
+    margin: 0 15px;
+}
+
+.idea p{
+    font-size: 20px;
+}
+
+.br{
+    display: none;
+    height: 17px;
+}
+
+.br_500{
+    display: none;
+}
+
+#place{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    bottom: 220px;
+}
+
+#en-h2{
+    display: none;
+}
+
+#cloud{
+    position:relative;
+    bottom:500px;
+}
+
+.mapBox{
+    margin: 75px auto 0;
+    width: 90%;
+    height: 50vw;
+    display: flex;
+}
+
+.map{
+    width: 50%;
+    height: 43.4vw;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+}
+
+#beer{
+    position:absolute;
+    top:-150px;
+    right: -100px;
+}
+
+.com_map_word{
+    width: 450px;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.phone_map_word{
+    display: none;
+}
+
+.map h3{
+    display: none;
+}
+
+/* -----------------手機版----------------- */
+@media screen and (max-width:1024px){
+    #idea{
+        margin-top: 35px;
+    }
+
+    #cloud{
+        bottom:350px;
+    }
+
+    #place{
+        padding-top: 120px;
+        bottom: 300px;
+    }
+
+    #en-h2{
+        display: block;
+        font-family: LucidaGrande;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    #beer{
+        width: 150px;
+        top:-100px;
+        right: -70px;
+    }
+
+    .com_map_word{
+        display: none;
+    }
+
+    .phone_map_word{
+        display: block;
+        width: 100%;
+    }
+
+    .phone_map_word p{
+        font-size: 20px;
+        letter-spacing: 5px;
+        line-height: 1.8;
+    }
+
+    .map h3{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .phone_map_word_br{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .idea{
+        width: 500px;
+    }
+
+    .idea p{
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .br{
+        display: block;
+        height: 14px;
+    }
+
+    .map{
+        padding: 10px;
+    }
+
+    #beer{
+        width: 120px;
+    }
+
+    .phone_map_word{
+        margin-top: 50px;
+    }
+
+    .phone_map_word h2{
+        font-size: 28px;
+    }
+
+    .phone_map_word p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .idea{
+        width: 300px;
+    }
+
+    #idea{
+        height: 600px;
+    }
+
+    .idea p{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    #idea h1,#place h1{
+        font-size: 26px;
+    }
+
+    .fans{
+        width: 30px;
+    }
+
+    .br{
+        height: 14px;
+    }
+
+    .br_500{
+        display: block;
+        height: 14px;
+    }
+
+    #place{
+        padding-top: 120px;
+        bottom: 250px;
+    }
+
+    #en-h2{
+        font-size: 12px;
+    }
+
+    #cloud{
+        bottom:250px;
+    }
+
+    #beer{
+        width: 80px;
+        top:-60px;
+        right: -50px;
+    }
+
+    .mapBox{
+        margin-top: 35px;
+    }
+
+    .map h3{
+        font-size: 18px;
+        position: relative;
+        left: 8px;
+        letter-spacing: 5px;
+    }
+
+    .phone_map_word h2{
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .phone_map_word p{
+        font-size: 14px;
+    }
+
+    .phone_map_word_br{
+        display: block;
+    }
+
+
+}
