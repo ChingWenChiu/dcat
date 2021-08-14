@@ -27,7 +27,7 @@ $(document).ready(function () {
 $(function(){
     
     $('.item').mouseenter(function(){
-        $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(.8)");
+        $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(.6)");
         
     }); 
     $(".item").mouseleave(function(){
