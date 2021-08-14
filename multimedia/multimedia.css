@@ -640,7 +640,9 @@ h2{
     }
     .breadcrumb ul li+li::before{
         bottom: 3.5px;
+        width: 1px;
     }
+
     .breadcrumb ul li a::after{
         width: 74px;
     }
