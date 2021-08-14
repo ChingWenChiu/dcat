@@ -1,0 +1,657 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: LucidaGrande;
+    src: url('../ttc/LucidaGrande.woff2');
+}
+h1,h3,h4{
+    font-family: "Noto Serif TC";
+}
+h2{
+    font-family: LucidaGrande;
+}
+.main-multimedia-page{
+    background-color:#0e1e3c ;
+    overflow-x: hidden;
+    font-family: "Noto Serif TC";
+    color: #fff;
+}
+.work-title {
+    display: flex;
+    user-select: none;
+}
+.work-title  h1{
+    font-size: 50px;
+    letter-spacing: .5em;
+    text-indent: .5em;
+    padding: 20px 40px;
+    margin: 100px auto 40px;
+    background: url('../bg and icon/bg_board.png') no-repeat center 17px;
+    background-size: 100%;
+}
+.breadcrumb,
+.breadcrumb ul{
+    display: flex;
+    margin: auto;
+}
+
+.breadcrumb ul li{
+    margin: 20px;
+    font-size: 24px;
+    letter-spacing: 8px;
+    text-indent: 8px;
+    position: relative;
+}
+.breadcrumb ul li+li::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1em;
+    background-color: #fff;
+    left: -20px;
+    bottom: 5px;
+}
+.breadcrumb ul li a{
+    display: block;
+    transition: .1s ease-in-out;
+}
+.breadcrumb ul li a::after{
+    content: 'ˇ';
+    position: absolute;
+    text-align: center;
+    width: 136px;
+    right: 0;
+    bottom: -1.5em;
+    transition: .3s .05s ease-in-out;
+}
+.breadcrumb ul li:hover a,
+.breadcrumb ul li a:hover::after{
+    transform: translateY(8px);
+}
+
+#concept{
+    display: flex;
+    width: 850px;
+    margin: 80px auto;
+}
+#concept .concept-title,
+#concept .concept-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#concept .concept-title{
+    width: 25%;
+    text-align: center;
+}
+#concept .concept-title h1,
+.content-title h1,
+.team-title h1,
+.adviser-title h1{
+    margin: 0;
+    font-size: 60px;
+    letter-spacing: 8px;
+    text-indent: 8px;
+}
+
+#concept .concept-txt,
+.member .txt p,
+.adviser-box p{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+#concept .concept-txt{
+    width: 60%;
+}
+/* some deco */
+
+.concept-deco,
+.content-deco,
+.team-deco,
+.adviser-deco{
+    width: 900px;
+    height: 20px;
+    margin: auto;
+    background: url("../bg and icon/bg_line.png") no-repeat center;
+    background-size: 100%;
+}
+
+.concept-deco,
+.team-deco{
+    transform: scaleX(-1);
+    position: relative;
+}
+
+.concept-deco img,
+.concept-deco::after{
+    width: 200px;
+    position: absolute;
+    bottom: -15px;
+    left: calc(0% - 50px);
+    transform: scaleX(-1);
+}
+
+.concept-deco::after{
+    content: '';
+    height: 206.41px;
+    background: url('../bg and icon/i_izakaya_open.svg') no-repeat;
+    background-size: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.concept-deco:hover::after{
+    opacity: 1;
+}
+
+.content-deco{
+    margin-top: 10px;
+}
+
+
+.team-deco img{
+    width: 250px;
+    position: absolute;
+    bottom: -105px;
+    left: -10%;
+    transform: scaleX(-1);
+    transition: .5s;
+}
+
+.team-deco img:hover{
+    bottom: -50px;
+    left: -5%;
+}
+
+.content-title,
+.team-title,
+.adviser-title{
+    display: block;
+    text-align: center;
+    margin: 80px 0;
+}
+
+#content{
+    background: url('../bg and icon/bg_blue_balls.png') no-repeat center bottom;
+    background-size: 75%;
+}
+
+/* that box */
+
+.slide-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.slider{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.slides{
+    width: 500%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+    margin-right: 30px ;
+    user-select: none;
+}
+
+.slide img{
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* css for manual and auto */
+.navigation-manual,
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    bottom: -40px;
+}
+
+.manual-btn,
+.navigation-auto div{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child),
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #fff;
+}
+
+.manual-btn:hover{
+    background: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: calc(-20% - 30px);
+}
+
+#radio3:checked ~ .first{
+    margin-left: calc(-40% - 60px );
+}
+
+
+.iframe-container{
+    display: flex;
+    padding-bottom: 150px;
+}
+
+.iframe-container iframe{
+    margin: auto;
+}
+
+/* content-deco和concept-deco合併 */
+
+/* team */
+
+#team,
+#adviser{
+    margin-bottom: 150px;
+}
+
+.team-container{
+    display: flex;
+    margin: auto;
+    width: 900px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.member{
+    width: 270px;
+    margin: 15px;
+    text-align: center;
+}
+
+.member .pic{
+    margin: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.member .pic img{
+    width: 100%;
+}
+
+.member .txt{
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+
+/* adviser */
+.adviser-container{
+    display: flex;
+    width: 900px;
+    margin: auto;
+}
+
+.adviser-container .pic,
+.adviser-container .txt{
+    text-align: center;
+    margin: auto 20px;
+}
+.adviser-container .pic{
+    width: 40%;
+}
+.adviser-container .pic img{
+    width: 100%;
+}
+.adviser-container .txt{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    padding: 0 20px;
+}
+
+.adviser-container .txt h1{
+    position: relative;
+}
+
+.adviser-container .txt h1:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    bottom: -10px;
+}
+
+.adviser-box{
+    flex-grow: 1;
+    max-height: 200px;
+    overflow: auto;
+    margin-top: 1em;
+    padding: 0 .75em ;
+    transition: 1s;
+    /* text-overflow : ellipsis; */
+}
+
+.scroll-box{
+    overflow: auto;
+    /* max-height: none; */
+}
+
+.adviser-box::-webkit-scrollbar{
+    width: 2px;
+}
+.adviser-box::-webkit-scrollbar-track{
+    background: transparent;
+}
+.adviser-box::-webkit-scrollbar-thumb{
+    background: rgb(211, 209, 209);
+    border-radius: 5px;
+}
+.adviser-box::-webkit-scrollbar-thumb:hover{
+    background: #fff;
+}
+.adviser-container .txt button{
+    width: 150px;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+
+.link-container{
+    margin-bottom: 100px;
+}
+.link-container ul{
+    display: flex;
+    width: 850px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    font-family: LucidaGrande;
+}
+
+.link-container ul li{
+    letter-spacing: 2px;
+    text-indent: 2px;
+    position: relative;
+}
+
+.visit{
+    margin: 0 20px;
+}
+
+.visit::before,
+.share::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}
+
+.visit::before{
+    background: url('../bg and icon/i_brown_c1.png') no-repeat center;
+    background-size: 100%;
+}
+
+.share::before{
+    background: url('../bg and icon/i_brown_c2.png') no-repeat center;
+    background-size: 100%;
+}
+
+
+.visit::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    left: 0;
+    background-color: #fff;
+    bottom: 5px;
+    transition: .8s;
+}
+
+.visit:hover::after{
+    width: 100%;
+}
+
+.share{
+    display: flex;
+    margin-left: auto;
+}
+
+.share a{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 5px;
+    
+}
+.share a img{
+    transform: scale(.9);
+    transition: .3s;
+}
+
+.share a:hover img{
+    transform: scale(1);
+}
+
+@media screen and (max-width:1024px) {
+    #concept{
+        width: 700px;
+    }
+
+    .concept-deco,
+    .content-deco,
+    .team-deco,
+    .adviser-deco{
+        width: 750px;
+    }
+
+    .concept-deco img,
+    .concept-deco::after{
+        width: 150px;
+    }
+
+    .concept-deco::after{
+        height: 154.8px;
+    }
+
+    #content{
+        background-size: 90%;
+    }
+    .team-container{
+        width: 750px;
+    }
+
+    .member{
+        width: 240px;
+        margin: 5px;
+    }
+    .adviser-container{
+        width: 700px;
+    }
+
+    .link-container ul{
+        width: 700px;
+    }
+    .link-container ul li{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .breadcrumb ul li{
+        margin: 2px;
+        font-size: 20px;
+    }
+    .breadcrumb ul li+li::before{
+        left: -2px;
+    }
+
+    .breadcrumb ul li a::after{
+        width: 120px;
+    }
+
+    #concept{
+        width: 495px;
+    }
+    #concept .concept-title{
+        width: 30%;
+    }
+    #concept .concept-title h1,
+    .content-title h1,
+    .team-title h1,
+    .adviser-title h1{
+        font-size: 40px;
+    }
+    #concept .concept-txt,
+    .member .txt p,
+    .adviser-box p{
+        font-size: 16px;
+    }
+    #concept .concept-txt{
+        width: 65%;
+    }
+    .concept-deco,
+    .content-deco,
+    .team-deco,
+    .adviser-deco{
+        width: 500px;
+    }
+
+    .concept-deco img,
+    .concept-deco::after{
+        width: 120px;
+        left: calc(0% - 20px);
+    }
+
+    .concept-deco::after{
+        height: 123.84px;
+    }
+
+    .team-deco img{
+        width: 150px;
+        bottom: -55px;
+        left: -5%;
+    }
+
+    #content{
+        background: url('../bg and icon/bg_blue_balls.png') no-repeat center 50px;
+        background-size: 100%;
+    }
+
+    .slider{
+        width: 480px;
+        height: 320px;
+    }
+    
+    .slides{
+        height: 320px;
+    }
+    
+    .navigation-manual,
+    .navigation-auto{
+        width: 480px;
+    }
+
+    .team-container{
+        width: 500px;
+    }
+
+    .member{
+        width: 220px;
+    }
+
+    .member .txt h3,
+    .adviser-container .txt h3{
+        font-size: 20px;
+    }
+
+    .adviser-container{
+        width: 500px;
+    }
+    
+    .adviser-container .txt h1{
+        font-size: 32px;
+    }
+  
+    .adviser-container .txt{
+        padding: 0;
+    }
+    
+    .link-container ul{
+        width: 500px;
+    }
+    
+    .visit{
+        display: none;
+    }
+    .share{
+        margin-left: 40px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .work-title  h1{
+        font-size: 36px;
+        margin-top: 60px;
+    } 
+
+    .breadcrumb ul li{
+        font-size: 14px;
+        letter-spacing: 4px;
+        text-indent: 4px;
+    }
+    .breadcrumb ul li+li::before{
+        bottom: 3.5px;
+    }
+    .breadcrumb ul li a::after{
+        width: 74px;
+    }
+    .breadcrumb ul li:hover a,
+    .breadcrumb ul li a:hover::after{
+        transform: translateY(4px);
+    }
+}
