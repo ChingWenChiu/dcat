@@ -685,14 +685,19 @@ h2{
     }
 
     .member{
-        width: 150px;
+        width: 155px;
+        margin: 2.5px;
     }
 
     .member .txt h3,
     .adviser-container .txt h3{
         font-size: 16px;
     }
-    
+    .adviser-container .pic,
+    .adviser-container .txt{
+        margin: auto 5px;
+    }
+
     .adviser-container .txt h1{
         font-size: 24px;
     }
