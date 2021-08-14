@@ -595,7 +595,9 @@ h2{
         width: 480px;
     }
 
-    .team-container{
+    .team-container,
+    .adviser-container,
+    .link-container ul{
         width: 500px;
     }
 
@@ -607,10 +609,6 @@ h2{
     .adviser-container .txt h3{
         font-size: 20px;
     }
-
-    .adviser-container{
-        width: 500px;
-    }
     
     .adviser-container .txt h1{
         font-size: 32px;
@@ -618,10 +616,6 @@ h2{
   
     .adviser-container .txt{
         padding: 0;
-    }
-    
-    .link-container ul{
-        width: 500px;
     }
     
     .visit{
@@ -653,5 +647,57 @@ h2{
     .breadcrumb ul li:hover a,
     .breadcrumb ul li a:hover::after{
         transform: translateY(4px);
+    }
+    #concept{
+        width: 320px;
+    }
+    #concept .concept-title h1,
+    .content-title h1,
+    .team-title h1,
+    .adviser-title h1{
+        font-size: 30px;
+    }
+    
+    #concept .concept-txt,
+    .member .txt p,
+    .adviser-box p{
+        font-size: 12px;
+    }
+
+    .slider{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .slides{
+        height: 200px;
+    }
+    
+    .navigation-manual,
+    .navigation-auto{
+        width: 300px;
+    }
+
+    .team-container,
+    .adviser-container,
+    .link-container ul{
+        width: 320px;
+    }
+
+    .member{
+        width: 150px;
+    }
+
+    .member .txt h3,
+    .adviser-container .txt h3{
+        font-size: 16px;
+    }
+    
+    .adviser-container .txt h1{
+        font-size: 24px;
+    }
+  
+    .share{
+        margin-left: 40px;
     }
 }
