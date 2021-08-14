@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="same.css">
+    <link rel="icon" href="./photo/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+    <title>肝掰</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav id="com_nav"> 
+
+            <div class="nav_left">
+
+                <a href="index.html"><img src="./photo/logo.png" alt="logo"></a>
+            
+            </div>
+
+            <div class="nav_right">
+
+                <div class="nav_about">
+
+                    <img src="./photo/fan.png" alt="fan" width="35px">
+
+                    <a href="about.html">關於展覽</a>
+
+                </div>
+
+                <div class="nav_about">
+
+                    <img src="./photo/fan.png" alt="fan" width="35px">
+
+                    <a href="aboutworks.html">關於作品</a>
+                    
+                </div>
+        
+            </div>
+
+        </nav>
+
+        <nav id="phone_nav">
+
+            <div id="myNav" class="phone_menu overlay">
+                
+                <a href="javascript:void(0)" onclick="closeNav()" style="margin-bottom:10px;position:relative;bottom:10px;">&times;</a>
+
+                <div class="overlay-content">
+                    <a href="index.html" style="position:relative;bottom:40px;">首頁</a>
+
+                    <div class="about">
+
+                        <a href="about.html" style="margin-bottom:10px;">關於展覽</a>
+
+                        <img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;">
+                    
+                        <p><a href="about.html#idea" id="font-size">展覽理念</a></p>
+                        <p><a href="about.html#place" id="font-size">展覽地點</a></p>
+                        <p><a href="about.html#team" id="font-size">籌備團隊</a></p>
+                        <p><a href="about.html#teachers" id="font-size">班導師</a></p>
+
+                    </div>
+                    
+                    <div class="aboutworks">
+                        <a href="aboutworks.html"style="margin-bottom:10px;">關於作品</a>
+                        <img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;">
+                        
+                        <p><a href="aboutworks.html#multimedia" id="font-size">多媒體</a></p>
+                        <p><a href="aboutworks.html#theses" id="font-size" style="margin-bottom:30px;">論文</a></p>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <img id="phone_menu" src="./photo/menu_phone.png" alt="menu" width="150px" onclick="openNav()">
+
+            <a href="index.html"><img id="phone_logo" src="./photo/logo.png" alt="logo" width="80px"></a>
+
+        </nav>
+
+        <div class="empty"></div>
+
+        <div id="sidebar"  onmouseleave="menuOut();">
+
+            <a href="javascript:void(0)" onclick="closeSide()" style="position:relative;left:150px;top:10px;">&times;</a>
+
+            <a href="index.html" style="top:5%;">首頁</a>
+
+            <a href="about.html" style="top:20%;">關於展覽</a>
+            <img src="./photo/menu_line.png" width="100%" style="position: absolute;top:29%;left:15%;">
+            <a href="about.html#idea" style="top:33%;font-size:16px;">展覽理念</a>
+            <a href="about.html#place" style="top:41%;font-size:16px;">展覽地點</a>
+            <a href="about.html#team" style="top:49%;font-size:16px;">籌備團隊</a>
+            <a href="about.html#teachers" style="top:57%;font-size:16px;">班導師</a>
+
+            <a href="aboutworks.html" style="top:70%;">關於作品</a>
+            <img src="./photo/menu_line.png" width="100%" style="position: absolute;top:79%;left:15%;">
+            <a href="aboutworks.html#multimedia" style="top:82%;font-size:16px;">多媒體</a>
+            <a href="aboutworks.html#theses" style="top:90%;font-size:16px;">論文</a>
+
+        </div>
+
+        <div id="com_menu">
+
+            <img id="menu" onmouseenter="menuIn();" src="./photo/menu.png" alt="menu" width="25px">
+       
+        </div>
+
+        <div class="footerTop">
+
+            <p style="width:310px;margin:0 auto;">國立陽明交通大學</p>
+
+            <p>傳播與科技學系111級畢業成果展</p>
+
+            <a href="#"><img id="FB" src="./photo/fb.png" alt="FB" width="45px"></a>
+
+            <p style="font-family:LucidaGrande;letter-spacing:4px;margin-top:30px;">©NYCU DCAT. All rights reserved.</p>
+
+            <img id="top" src="./photo/top.png" width="30px">
+
+            <img id="line" src="./photo/line.png" width="100%">
+    
+        </div>
+
+        <footer id="footer" class="com_footer">
+
+            <div class="footerLeft" style="float:left;margin-left:25px;">
+
+                <img class="japan" src="./photo/footer.png" width="35px">
+                <p style="font-size:22px;display:inline;position: relative;top:3px;">開幕茶會</p>
+                <p class="footerTime">時間&nbsp;&nbsp;2021年12月10日 8:00-17:00</p>
+                <p class="footerTime">地點&nbsp;&nbsp;新竹市東區大學路1001號 國立陽明交通大學浩然圖書館 B1 國際會議廳</p>
+
+            </div>
+
+            <div class="footerRight" style="float:right;margin-right:50px;margin-left:25px;">
+
+                <img class="japan" src="./photo/footer.png" width="35px">
+                <p style="font-size:22px;display:inline;position: relative;top:3px;">正式展覽</p>
+                <p class="footerTime">時間&nbsp;&nbsp;2021年12月17日至12月19日 8:00~17:00</p>
+                <p class="footerTime">地點&nbsp;&nbsp;臺北市萬華區康定路173巷剝皮寮演藝廳</p>
+                    
+            </div>
+
+            <div class="sponsor">
+
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                
+            </div>
+
+            
+
+        </footer>
+
+        <footer class="phone_footer">
+
+            <div class="footerUp"> 
+
+                <div id="footerUpLeft">
+
+                    <img id="phone_footer" src="./photo/phone_footer.png" width="225px" style="float:left;">
+                
+                </div>
+    
+                <div id="footerUpRight">
+                    
+                    <div id="footerUpRight_Left">
+                        <p>時間</p>
+                        <p style="margin-top:42px;">地點</p>
+                    
+                    </div>
+    
+                    <div id="footerUpRight_Right">
+    
+                        <span>2021年12月10日 8:00～17:00</span>
+                        <br>
+                        <span>新竹市東區大學路1001號<br>國立陽明交通大學<br>浩然圖書館B1國際會議廳</span>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="footerDown">
+
+                <div id="footerDownLeft">
+                
+                    <div id="footerDownLeft_Left">
+                        <p>時間</p>
+                        <p style="margin-top:45px;">地點</p>
+                    
+                    </div>
+    
+                    <div id="footerDownLeft_Right">
+    
+                        <span>2021年12月17日至12月19日 8:00~17:00</span>
+                        <br>
+                        <span>台北市萬華區康定路173巷<br>剝皮寮演藝廳</span>
+                    
+                    </div>
+                    
+                </div>
+
+                <div id="footerDownRight">
+
+                    <img id="phone_footer2" src="./photo/phone_footer2.png" width="250px">
+                
+                </div>
+
+            </div>
+           
+            <div class="sponsor">
+
+                <a href="#" target="_blank"><img src="./photo/logo.png" style="margin-left: 0;"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                
+            </div>
+            
+        </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="same.js"></script>
+    
+</body>
+
+</html>
