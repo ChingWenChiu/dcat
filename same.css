@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    overflow: hidden;
+    overflow:hidden;
     height: auto;
     font-family: "Noto Serif TC";
     letter-spacing: 8px;
@@ -161,7 +161,10 @@ body{
 /* ------------沒有贊助商要加---------------- */
 .com_footer{
     height: 180px;
-    padding-bottom: 80px;
+}
+
+.footerRight{
+    margin-bottom: 30px;
 }
 
 /* -------------------手機版------------------ */
