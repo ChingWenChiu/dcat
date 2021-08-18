@@ -45,6 +45,8 @@ $(document).ready(function () {
     
 })
 
+
+
 // auto slide 
 
 // var counter = 1;
