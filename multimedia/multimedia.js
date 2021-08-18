@@ -58,11 +58,11 @@ $(document).ready(function () {
 
 //防右鍵
 
-// window.oncontextmenu = function(event) {
-//     event.preventDefault()
-//     event.stopPropagation()
-//     return false
-// }
+window.oncontextmenu = function(event) {
+    event.preventDefault()
+    event.stopPropagation()
+    return false
+}
 
 //防拖拉
 window.ondragstart = function(event) {
