@@ -9,12 +9,12 @@ h1,h2,h3{
 
 #idea{
     width: 100%;
-    height: 700px;
-    position: relative;
-    bottom: 135px;
+    height: 500px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 135px;
+    padding-top: 30px;
+    position: relative;
+    bottom: 30px;
 }
 
 .idea{
@@ -48,8 +48,6 @@ h1,h2,h3{
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
-    position: relative;
-    bottom: 220px;
 }
 
 #en-h2{
@@ -97,9 +95,8 @@ h1,h2,h3{
 }
 
 #teamBox{
-    height: 950px;
+    height: 900px;
     position: relative;
-    bottom: 200px;
 }
 
 #team_cloud_top{
@@ -270,15 +267,12 @@ h1,h2,h3{
     margin:auto;
 }
 
-.footerTop,.com_footer,.phone_footer{
-    position: relative;
-    bottom: 200px;
-}
-
 /* -----------------手機版----------------- */
 @media screen and (max-width:1024px){
     #idea{
-        margin-top: 35px;
+        padding-top: 120px;
+        bottom: 80px;
+        height: 550px;
     }
 
     #cloud{
@@ -286,8 +280,9 @@ h1,h2,h3{
     }
 
     #place{
+        position: relative;
+        bottom: 80px;
         padding-top: 120px;
-        bottom: 300px;
     }
 
     #en-h2{
@@ -328,7 +323,7 @@ h1,h2,h3{
     }
 
     #teamBox{
-        bottom: 350px;
+        bottom: 100px;
         padding-top: 35px;
     }
 
@@ -340,6 +335,7 @@ h1,h2,h3{
 
     .crewBox{
         height: 500px;
+        top: 150px;
     }
 
     .crew{
@@ -350,10 +346,6 @@ h1,h2,h3{
 
     .crewBox h2, #crew_p{
         top: 20px;
-    }
-
-    .footerTop,.com_footer,.phone_footer{
-        bottom: 350px;
     }
 }
 
@@ -393,8 +385,7 @@ h1,h2,h3{
     }
 
     #place{
-        padding-top: 120px;
-        bottom: 350px;
+  
     }
 
     .crewBox{
@@ -426,10 +417,6 @@ h1,h2,h3{
         width: 300px;
     }
 
-    #idea{
-        height: 600px;
-    }
-
     .idea p{
         font-size: 14px;
         letter-spacing: 2px;
@@ -450,11 +437,6 @@ h1,h2,h3{
     .br_500{
         display: block;
         height: 14px;
-    }
-
-    #place{
-        padding-top: 120px;
-        bottom: 250px;
     }
 
     #en-h2{
@@ -559,8 +541,15 @@ h1,h2,h3{
     }
 
     #teamBox{
-        bottom: 250px;
-        height: 1050px;
+        height: 1000px;
+    }
+
+    #idea{
+        height: 470px;
+    }
+
+    .phone_footer{
+        padding-bottom: 0px;
     }
 
 }
