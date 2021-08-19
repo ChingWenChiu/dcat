@@ -8,7 +8,7 @@ var myAnchor = document.getElementsByClassName("myAnchor");
 $(document).ready(function () {
     $('.sub-title-1').click(function(){
         $("html,body").animate({ scrollTop: $('#multimedia').offset().top-120}, 800);
-        
+
     });
     $('.sub-title-2').click(function(){
         $("html,body").animate({ scrollTop: $('#theses').offset().top-140}, 800);
@@ -19,25 +19,33 @@ $(document).ready(function () {
     });
 
     
-})
-//mobile event
-
-$('.sub-title h3').on('touchstart',stmStart);
-$('.sub-title h3').on('touchend',stmEnd);
-$('.item').on('touchstart',brightItem);
-$('.item').on('touchend',unbrightItem);
-//work hover event
-
-$(function(){
     
-    $('.item').mouseenter(function(){
-        $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(.6)");
-        
-    }); 
-    $(".item").mouseleave(function(){
-        $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(1)");	
-    });
+    $('.item').on('mouseover',brightItem)
+    $('.item').on('mouseleave',unbrightItem)
+    $('.sub-title a').on('mouseover',stmStart)
+    $('.sub-title a').on('mouseleave',stmEnd)
+  
+    $('.item').on('touchstart',brightItem);
+    $('.item').on('touchend',unbrightItem);
+    $('.sub-title a').on('touchstart',stmStart);
+    $('.sub-title a').on('touchend',stmEnd);    
+  
+
 })
+
+// if($(window).width() > 768){
+    
+//     $('.item').on('mouseover',brightItem)
+//     $('.item').on('mouseleave',unbrightItem)
+//     $('.sub-title a').on('mouseover',stmStart)
+//     $('.sub-title a').on('mouseleave',stmEnd)
+// }else{
+//     $('.item').on('touchstart',brightItem);
+//     $('.item').on('touchend',unbrightItem);
+//     $('.sub-title a').on('touchstart',stmStart);
+//     $('.sub-title a').on('touchend',stmEnd);
+// }
+
 
 function menuIn(){
     sidebar.style.display = "block";
@@ -68,17 +76,21 @@ function closeSide() {
 }
 
 function stmStart(){
+    console.log('tap')
     $(this).addClass("st-m-hover");
 }
 
 function stmEnd(){
+    console.log('leave')
     $(this).removeClass("st-m-hover");
 }
 function brightItem(){
-    $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(.6)");
+    console.log('in')
+    $(this).siblings().addClass("filter");
 }
 function unbrightItem(){
-    $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(1)");	
+    console.log('out')
+    $(this).siblings().removeClass("filter");
 }
 //防右鍵
 

@@ -84,8 +84,7 @@ h2{
     right: .1em;
 }
 
-.sub-title h3:hover img,
-.st-m-hover img{
+.st-m-hover h3 img{
     opacity: 1;
 }
 
@@ -200,6 +199,11 @@ img[alt="丸子串"]:hover+img,
     margin: 20px 4.5% ;
     text-align: center;
     transition: .3s ease-in-out;
+}
+
+.filter{
+    -webkit-filter: brightness(.6);
+    filter: brightness(.6);
 }
 
 .item img{
