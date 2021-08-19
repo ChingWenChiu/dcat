@@ -41,6 +41,7 @@ $(document).ready(function () {
             $("html,body").animate({ scrollTop: $('#adviser').offset().top-120}, 800);
             
         });
+        //remove ugly btn
         $( ".swiper-button-next" ).remove();
         $( ".swiper-button-prev" ).remove();
     }
@@ -82,11 +83,11 @@ function bcmEnd(event) {
 
 //防右鍵
 
-window.oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-}
+// window.oncontextmenu = function(event) {
+//     event.preventDefault()
+//     event.stopPropagation()
+//     return false
+// }
 
 //防拖拉
 window.ondragstart = function(event) {

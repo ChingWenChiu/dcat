@@ -84,7 +84,8 @@ h2{
     right: .1em;
 }
 
-.sub-title h3:hover img{
+.sub-title h3:hover img,
+.st-m-hover img{
     opacity: 1;
 }
 

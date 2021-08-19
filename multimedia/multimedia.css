@@ -606,7 +606,8 @@ h2{
         width: 74px;
     }
     .breadcrumb ul li:hover a,
-    .breadcrumb ul li a:hover::after{
+    .breadcrumb ul li a:hover::after,
+    .bc-m-hover{
         transform: translateY(4px);
     }
     #concept{

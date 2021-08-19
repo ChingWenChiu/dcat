@@ -20,8 +20,12 @@ $(document).ready(function () {
 
     
 })
+//mobile event
 
-
+$('.sub-title h3').on('touchstart',stmStart);
+$('.sub-title h3').on('touchend',stmEnd);
+$('.item').on('touchstart',brightItem);
+$('.item').on('touchend',unbrightItem);
 //work hover event
 
 $(function(){
@@ -63,6 +67,19 @@ function closeSide() {
     com_menu.style.pointerEvents = "auto";
 }
 
+function stmStart(){
+    $(this).addClass("st-m-hover");
+}
+
+function stmEnd(){
+    $(this).removeClass("st-m-hover");
+}
+function brightItem(){
+    $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(.6)");
+}
+function unbrightItem(){
+    $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(1)");	
+}
 //防右鍵
 
 window.oncontextmenu = function(event) {
