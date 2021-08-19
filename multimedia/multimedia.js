@@ -41,6 +41,8 @@ $(document).ready(function () {
             $("html,body").animate({ scrollTop: $('#adviser').offset().top-120}, 800);
             
         });
+        $( ".swiper-button-next" ).remove();
+        $( ".swiper-button-prev" ).remove();
     }
     
 })
