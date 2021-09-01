@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -8,9 +7,6 @@
 a{
     text-decoration: none;
 }
-/* a:hover{
-    color: #fff;
-} */
 @font-face {
     font-family: LucidaGrande;
     src: url('../ttc/LucidaGrande.woff2');
@@ -146,14 +142,14 @@ h2{
 .concept-deco::after{
     content: '';
     height: 206.41px;
-    background: url('../bg and icon/i_izakaya_open.svg') no-repeat;
+    background: url('../bg and icon/i_izakaya.svg') no-repeat;
     background-size: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: .3s;
 }
 
 .concept-deco:hover::after{
-    opacity: 1;
+    opacity: 0;
 }
 
 .content-deco{
@@ -187,14 +183,18 @@ h2{
     background: url('../bg and icon/bg_blue_balls.png') no-repeat center bottom;
     background-size: 75%;
 }
-
+#content,
+#team,
+#adviser,
+.slide-container{
+    margin-bottom: 150px;
+}
 /* that box */
 
 .slide-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
 }
 
 :root {
@@ -203,6 +203,8 @@ h2{
 .swiper-container {
     width: 600px;
     height: 400px;
+    /* overflow: hidden; */
+    position: relative;
 }
 
 .swiper-slide {
@@ -225,6 +227,7 @@ h2{
     align-items: center;
 }
 
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -238,26 +241,22 @@ h2{
 }
 .iframe-container{
     display: flex;
-    padding-bottom: 150px;
 }
 
 .iframe-container iframe{
     margin: auto;
 }
 
-/* content-deco和concept-deco合併 */
-
 /* team */
 
-#team,
-#adviser{
-    margin-bottom: 150px;
-}
-
-.team-container{
+.team-container,
+.adviser-container{
     display: flex;
     margin: auto;
     width: 900px;
+}
+
+.team-container{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -283,17 +282,12 @@ h2{
     text-indent: 2px;
 }
 
-.member .txt h3{
+.member .txt h3,
+.member .txt h4{
     color: #ffde85;
 }
 
 /* adviser */
-.adviser-container{
-    display: flex;
-    width: 900px;
-    margin: auto;
-}
-
 .adviser-container .pic,
 .adviser-container .txt{
     text-align: center;
@@ -335,12 +329,10 @@ h2{
     margin-top: 1em;
     padding: 0 .75em ;
     transition: 1s;
-    /* text-overflow : ellipsis; */
 }
 
 .scroll-box{
     overflow: auto;
-    /* max-height: none; */
 }
 
 .adviser-box::-webkit-scrollbar{
@@ -449,6 +441,13 @@ h2{
         width: 700px;
     }
 
+    #concept .concept-title h1,
+    .content-title h1,
+    .team-title h1,
+    .adviser-title h1{
+        font-size: 50px;
+    }
+
     .concept-deco,
     .content-deco,
     .team-deco,
@@ -468,6 +467,14 @@ h2{
     #content{
         background-size: 90%;
     }
+
+    #content,
+    #team,
+    #adviser,
+    .slide-container{
+        margin-bottom: 100px;
+    }
+    
     .team-container{
         width: 750px;
     }
@@ -494,7 +501,9 @@ h2{
         font-size: 20px;
     }
     .breadcrumb ul li+li::before{
+        width: 1.5px;
         left: -2px;
+        bottom: 4px;
     }
 
     .breadcrumb ul li a::after{
@@ -543,10 +552,21 @@ h2{
         bottom: -55px;
         left: -5%;
     }
-
+    .content-title,
+    .team-title,
+    .adviser-title{
+        margin: 40px 0;
+    }
     #content{
         background: url('../bg and icon/bg_blue_balls.png') no-repeat center 50px;
         background-size: 100%;
+    }
+
+    #content,
+    #team,
+    #adviser,
+    .slide-container{
+        margin-bottom: 80px;
     }
 
     .swiper-container{
@@ -559,16 +579,22 @@ h2{
     .link-container ul{
         width: 500px;
     }
-
+   
     .member{
         width: 220px;
+    }
+
+    .member .pic{
+        margin: 15px;
     }
 
     .member .txt h3,
     .adviser-container .txt h3{
         font-size: 20px;
     }
-    
+    .member .txt h4{
+        font-size: 18px;
+    }
     .adviser-container .txt h1{
         font-size: 32px;
     }
@@ -582,6 +608,10 @@ h2{
     }
     .share{
         margin-left: 40px;
+    }
+
+    .share a{
+        width: 30px;
     }
 
 }
@@ -626,6 +656,61 @@ h2{
         font-size: 12px;
     }
 
+    .concept-deco,
+    .content-deco,
+    .team-deco,
+    .adviser-deco{
+        width: 320px;
+        height: 40px;
+    }
+    .concept-deco,
+    .team-deco{
+        transform: scaleX(1);
+    }
+    .concept-deco{
+        background: url("../bg and icon/bg_line_p1.png") no-repeat center;
+        background-size: 100%;
+    }
+    .content-deco{
+        background: url("../bg and icon/bg_line_p2.png") no-repeat center;
+        background-size: 100%;
+    }
+    
+    .team-deco{
+        background: url("../bg and icon/bg_line_p3.png") no-repeat center;
+        background-size: 100%;
+    }
+    
+    .adviser-deco{
+        background: url("../bg and icon/bg_line_p4.png") no-repeat center;
+        background-size: 100%;
+    }
+    .concept-deco img,
+    .team-deco img{
+        transform: scaleX(1);
+    }
+    .concept-deco img{
+        width: 80px;
+        left:75%;
+    }
+    .concept-deco::after{
+        display: none;
+    }
+
+    .team-deco img{
+        width: 100px;
+        bottom: -20px;
+        left: 65%;
+    }
+    
+    #content{
+        background: none;
+    }
+    .iframe-container iframe{
+        width: 320px;
+        height: 180px;
+    }
+
     .swiper-container{
         width: 300px;
         height: 200px;
@@ -633,8 +718,18 @@ h2{
 
     .team-container,
     .adviser-container,
+    .link-container,
     .link-container ul{
         width: 320px;
+    }
+
+    .link-container{
+        display: flex;
+        margin: auto;
+    }
+    .link-container ul{
+        margin: -20px 20px 0 0;
+        justify-content: flex-end;
     }
 
     .member{
@@ -645,6 +740,9 @@ h2{
     .member .txt h3,
     .adviser-container .txt h3{
         font-size: 16px;
+    }
+    .member .txt h4{
+        font-size: 13px;
     }
     .adviser-container .pic,
     .adviser-container .txt{
@@ -657,5 +755,8 @@ h2{
   
     .share{
         margin-left: 40px;
+    }
+    .share::before{
+        display: none;
     }
 }

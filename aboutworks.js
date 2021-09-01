@@ -63,20 +63,20 @@ function closeSide() {
 }
 
 function stmStart(){
-    console.log('tap')
+    // console.log('tap')
     $(this).addClass("st-m-hover");
 }
 
 function stmEnd(){
-    console.log('leave')
+    // console.log('leave')
     $(this).removeClass("st-m-hover");
 }
 function brightItem(){
-    console.log('in')
+    // console.log('in')
     $(this).siblings().addClass("filter");
 }
 function unbrightItem(){
-    console.log('out')
+    // console.log('out')
     $(this).siblings().removeClass("filter");
 }
 //防右鍵
