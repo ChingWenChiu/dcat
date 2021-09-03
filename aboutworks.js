@@ -20,21 +20,19 @@ $(document).ready(function () {
 
 })
 
-// if($(window).width() > 768){
-    
-    
-    // $('.sub-title a').on('mouseover',stmStart)
-    // $('.sub-title a').on('mouseleave',stmEnd)
-// }else{
-    
-   
-// }
-$('.item').on('mouseover',brightItem)
-$('.item').on('mouseleave',unbrightItem)
-$('.item').on("touchstart",brightItem);
-$('.item').on("touchend",unbrightItem);
-$('.sub-title a').on("touchstart",stmStart);
-$('.sub-title a').on("touchend",stmEnd);
+if($(window).width() > 768){
+    $('.sub-title a').on('mouseover',stmStart)
+    $('.sub-title a').on('mouseleave',stmEnd)
+    $('.item').on('mouseover',brightItem)
+    $('.item').on('mouseleave',unbrightItem)
+}else{
+    $('.item').on("touchstart",brightItem);
+    $('.item').on("touchend",unbrightItem);
+    $('.sub-title a').on("touchstart",stmStart);
+    $('.sub-title a').on("touchend",stmEnd);  
+}
+
+
 
 function menuIn(){
     sidebar.style.display = "block";
@@ -65,20 +63,16 @@ function closeSide() {
 }
 
 function stmStart(){
-    // console.log('tap')
     $(this).addClass("st-m-hover");
 }
 
 function stmEnd(){
-    // console.log('leave')
     $(this).removeClass("st-m-hover");
 }
 function brightItem(){
-    // console.log('in')
     $(this).siblings().addClass("filter");
 }
 function unbrightItem(){
-    // console.log('out')
     $(this).siblings().removeClass("filter");
 }
 //防右鍵
