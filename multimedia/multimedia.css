@@ -669,21 +669,21 @@ h2{
     }
     .concept-deco{
         background: url("../bg and icon/bg_line_p1.png") no-repeat center;
-        background-size: 100%;
+        background-size: 130%;
     }
     .content-deco{
         background: url("../bg and icon/bg_line_p2.png") no-repeat center;
-        background-size: 100%;
+        background-size: 130%;
     }
     
     .team-deco{
         background: url("../bg and icon/bg_line_p3.png") no-repeat center;
-        background-size: 100%;
+        background-size: 130%;
     }
     
     .adviser-deco{
         background: url("../bg and icon/bg_line_p4.png") no-repeat center;
-        background-size: 100%;
+        background-size: 130%;
     }
     .concept-deco img,
     .team-deco img{
@@ -691,7 +691,7 @@ h2{
     }
     .concept-deco img{
         width: 80px;
-        left:75%;
+        left:80%;
     }
     .concept-deco::after{
         display: none;
@@ -699,6 +699,10 @@ h2{
 
     .team-deco img{
         width: 100px;
+        bottom: -20px;
+        left: 65%;
+    }
+    .team-deco img:hover{
         bottom: -20px;
         left: 65%;
     }
