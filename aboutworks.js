@@ -24,8 +24,8 @@ $(document).ready(function () {
     
     $('.item').on('mouseover',brightItem)
     $('.item').on('mouseleave',unbrightItem)
-    $('.sub-title a').on('mouseover',stmStart)
-    $('.sub-title a').on('mouseleave',stmEnd)
+    // $('.sub-title a').on('mouseover',stmStart)
+    // $('.sub-title a').on('mouseleave',stmEnd)
 // }else{
     $('.item').on('touchstart',brightItem);
     $('.item').on('touchend',unbrightItem);

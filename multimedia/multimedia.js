@@ -73,12 +73,10 @@ $('.breadcrumb a').on("touchstart", bcmStart);
 $(".breadcrumb a").on("touchend", bcmEnd);
 
 function bcmStart(event) {
-    console.log('touchstart')
     $(this).addClass("bc-m-hover");
 }
 function bcmEnd(event) {
     $(this).removeClass("bc-m-hover");
-    console.log('touchend')
 }
 
 //防右鍵
