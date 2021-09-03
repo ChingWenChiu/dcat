@@ -84,7 +84,6 @@ h2{
 .sub-title :last-child img{
     right: .1em;
 }
-/* .sub-title a:hover img, */
 .st-m-hover h3 img{
     opacity: 1;
 }
