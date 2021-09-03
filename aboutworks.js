@@ -22,17 +22,19 @@ $(document).ready(function () {
 
 // if($(window).width() > 768){
     
-    $('.item').on('mouseover',brightItem)
-    $('.item').on('mouseleave',unbrightItem)
+    
     // $('.sub-title a').on('mouseover',stmStart)
     // $('.sub-title a').on('mouseleave',stmEnd)
 // }else{
-    $('.item').on('touchstart',brightItem);
-    $('.item').on('touchend',unbrightItem);
-    $('.sub-title a').on('touchstart',stmStart);
-    $('.sub-title a').on('touchend',stmEnd);
+    
+   
 // }
-
+$('.item').on('mouseover',brightItem)
+$('.item').on('mouseleave',unbrightItem)
+$('.item').on("touchstart",brightItem);
+$('.item').on("touchend",unbrightItem);
+$('.sub-title a').on("touchstart",stmStart);
+$('.sub-title a').on("touchend",stmEnd);
 
 function menuIn(){
     sidebar.style.display = "block";
