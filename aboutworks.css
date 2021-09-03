@@ -16,12 +16,15 @@ a{
 h1,h3,h4{
     font-family: "Noto Serif TC";
 }
+h1{
+    letter-spacing: 8px;
+    text-indent: 8px;
+}
 h2{
     font-family: LucidaGrande;
 }
 .main-works-page{
     background-color:#0e1e3c ;
-    /* 不讓氣味影響左右出現滾動選單 */
     overflow-x: hidden;
     font-family: "Noto Serif TC";
     color: #fff;
@@ -30,11 +33,12 @@ h2{
 .works-nav .title{
     display: flex;
 }
+.works-nav  h1,
+.multimedia-title h1,
+.theses-title h1 {
+    font-size: 60px;
+}
 .works-nav  h1{
-    font-size: 72px;
-    letter-spacing: .5em;
-    /* 把字距多餘的推回來 */
-    text-indent: .5em;
     margin: 100px auto;
     position: relative;
 }
@@ -42,41 +46,38 @@ h2{
 .works-nav  h1::after{
     content: '';
     background: url('bg and icon/i_flower.png') no-repeat center center ;
-    background-size: 100px auto;
-    width: 100px;
+    background-size: 70px auto;
+    width: 70px;
     position: absolute;
     top: 0; 
-    bottom: 0;
+    bottom: -10px;
     margin: auto;
 }
 .works-nav  h1::before{
-    left:-100px;
+    left:-90px;
+}
+.works-nav  h1::after{
+    right:-90px;
 }
 /* 子頁副選單 */
 .works-nav .sub-title{
     display: flex;
-    justify-content: center;
-}
-
-.sub-title .container:first-child{
-    margin-right: 5%;
-}
-.sub-title .container:last-child{
-    margin-left: 5%;
+    justify-content:center;
 }
 .sub-title h3{
     position: relative;
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: .3em;
-    /* 把字距多餘的推回來 */
     text-indent: .3em;
 }
-
+.sub-title .container:first-child{
+    margin-right: 10%;
+}
 .sub-title h3 img{
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    bottom: -13px;
+    bottom: -10px;
     opacity: 0;
     transition: .7s;
 }
@@ -156,25 +157,22 @@ img[alt="丸子串"]:hover+img,
 .theses-title{
     display: flex;
     flex-direction: column;
-    margin: 60px 100px;
+    margin: 60px 8%;
+    width: 220px;
+    text-align: center;
 }
 .multimedia-title{
-    text-align: right;
+    margin-left: auto;
+    margin-right: 10%;
 }
-.multimedia-title h1,
-.theses-title h1 {
-    font-size: 72px;
-}
+
 .multimedia-title h2,
 .theses-title h2{
     display: inline-block;
-    font-size: 30px;
-}
-.main-multimedia h2{
-    padding-right: 5px;
-}
-.main-theses h2{
-    padding-left: 10px;
+    font-size: 20px;
+    letter-spacing: .3em;
+    text-indent: .3em;
+    margin: 0;
 }
 /* 多媒體&論文小組版 */
 .main-multimedia .multimedia-group,
@@ -182,9 +180,7 @@ img[alt="丸子串"]:hover+img,
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* 要上下都60px */
     margin-bottom: 40px;
-    /* 不然會被雲擋住QAQ */
     position: relative;
     z-index: 3;
 }
@@ -219,10 +215,7 @@ img[alt="丸子串"]:hover+img,
 }
 /* RWD-平板寬 */
 @media screen and (max-width:1024px) {
-    /* 子頁選單 */
-    .works-nav  h1{
-        font-size: 60px;
-    }
+    
     /* 子頁副選單 */
     .sub-title h3{
         font-size: 36px;
@@ -339,13 +332,7 @@ img[alt="丸子串"]:hover+img,
     .theses-title h2{
         font-size: 15px;
     }
-    .main-multimedia h2{
-        margin-left: 8px;
-    }
-    .main-theses h2{
-        padding-left: 0;
-        padding-right: 4px;
-    }
+    
     /* 多媒體&論文小組版 */
     .main-multimedia .multimedia-group,
     .main-theses .theses-group{

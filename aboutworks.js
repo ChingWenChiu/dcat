@@ -20,18 +20,18 @@ $(document).ready(function () {
 
 })
 
-if($(window).width() > 768){
+// if($(window).width() > 768){
     
     $('.item').on('mouseover',brightItem)
     $('.item').on('mouseleave',unbrightItem)
     $('.sub-title a').on('mouseover',stmStart)
     $('.sub-title a').on('mouseleave',stmEnd)
-}else{
+// }else{
     $('.item').on('touchstart',brightItem);
     $('.item').on('touchend',unbrightItem);
     $('.sub-title a').on('touchstart',stmStart);
     $('.sub-title a').on('touchend',stmEnd);
-}
+// }
 
 
 function menuIn(){
@@ -81,11 +81,11 @@ function unbrightItem(){
 }
 //防右鍵
 
-window.oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-}
+// window.oncontextmenu = function(event) {
+//     event.preventDefault()
+//     event.stopPropagation()
+//     return false
+// }
 
 //防拖拉
 window.ondragstart = function(event) {
