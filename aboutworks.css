@@ -136,17 +136,18 @@ h2{
 /* 丸子和香氣 */
 .main-theses .deco :first-child{
     position: absolute;
-    width: 400px;
+    width: 300px;
     right: calc(20% - 25px);
     top: -75px;
 }
 .main-theses .deco :last-child{
     position: absolute;
-    height: 520px;
-    right: calc(20% - 260px);
+    height: 480px;
+    right: calc(20% - 300px);
     top: -490px;
     transition: .3s;
 }
+
 img[alt="丸子串"]:hover+img,
 .main-theses .deco :last-child:hover{
     transform: translate(40px,-50px);
@@ -219,23 +220,21 @@ img[alt="丸子串"]:hover+img,
     .sub-title h3{
         font-size: 36px;
     }
-    .sub-title h3 img{
-        width: 40px;
-    }
-    /* 多媒體&論文背景 */
-    .main-multimedia .deco :first-child{
-        width: 100px;
-        height: 490px;
-    }
-    .main-multimedia .deco :nth-child(2){
-        width: 700px;
-    }
     .main-theses .deco :first-child{
-        width: 300px;
+        width: 250px;
     }
     .main-theses .deco :last-child{
-        height: 480px;
-        right: calc(20% - 300px);
+        height: 450px;
+    }
+    
+    /* 多媒體&論文背景 */
+    .deco .lanterns{
+        width: 100px;
+        height: 490px;
+        left: calc(20% - 50px);
+    }
+    .deco .cloud{
+        width: 700px;
     }
     /* 多媒體&論文小組版 */
     .board .item{
@@ -245,7 +244,18 @@ img[alt="丸子串"]:hover+img,
 }
 /* RWD-平板直 */
 @media screen and (max-width:768px){
-    
+    .deco .lanterns{
+        width: 80px;
+        height: 400px;
+        left: calc(20% - 40px);
+    }
+    .deco .cloud{
+        width: 600px;
+    }
+    img[alt="丸子串"]:hover+img,
+    .main-theses .deco :last-child:hover{
+        transform: none;
+    }
 }
 /* RWD-手機 */
 @media screen and (max-width:500px) {
@@ -313,10 +323,7 @@ img[alt="丸子串"]:hover+img,
         right: -85px;
         top: -190px;
     }
-    img[alt="丸子串"]:hover+img,
-    .main-theses .deco :last-child:hover{
-        transform: none;
-    }
+    
     /* 多媒體&論文標題 */
     .multimedia-title,
     .theses-title{
