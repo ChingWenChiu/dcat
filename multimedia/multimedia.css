@@ -72,7 +72,8 @@ h2{
     transition: .3s .05s ease-in-out;
 }
 .breadcrumb ul li:hover a,
-.breadcrumb ul li a:hover::after{
+.breadcrumb ul li a:hover::after,
+.bc-m-hover{
     transform: translateY(8px);
 }
 
@@ -141,14 +142,14 @@ h2{
 .concept-deco::after{
     content: '';
     height: 206.41px;
-    background: url('../bg and icon/i_izakaya_open.svg') no-repeat;
+    background: url('../bg and icon/i_izakaya.svg') no-repeat;
     background-size: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: .3s;
 }
 
 .concept-deco:hover::after{
-    opacity: 1;
+    opacity: 0;
 }
 
 .content-deco{
@@ -182,118 +183,80 @@ h2{
     background: url('../bg and icon/bg_blue_balls.png') no-repeat center bottom;
     background-size: 75%;
 }
-
+#content,
+#team,
+#adviser,
+.slide-container{
+    margin-bottom: 150px;
+}
 /* that box */
 
 .slide-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
 }
 
-.slider{
+:root {
+    --swiper-theme-color: #fff;
+}
+.swiper-container {
     width: 600px;
     height: 400px;
-    position: relative;
     /* overflow: hidden; */
+    position: relative;
 }
 
-.slides{
-    width: 500%;
-    height: 400px;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    overflow: hidden;
-    
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 20%;
-    transition: 2s;
-    margin-right: 30px ;
-    user-select: none;
-}
-
-.slide img{
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
-}
-
-
-/* css for manual and auto */
-.navigation-manual,
-.navigation-auto{
-    position: absolute;
-    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
-    width: 600px;
-    bottom: -40px;
-}
-
-.manual-btn,
-.navigation-auto div{
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child),
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 
-#radio1:checked ~ .navigation-auto .auto-btn1,
-#radio2:checked ~ .navigation-auto .auto-btn2,
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #fff;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.manual-btn:hover{
-    background: #fff;
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
 }
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: calc(-20% - 30px);
-}
-
-#radio3:checked ~ .first{
-    margin-left: calc(-40% - 60px );
-}
-
-
 .iframe-container{
     display: flex;
-    padding-bottom: 150px;
 }
 
 .iframe-container iframe{
     margin: auto;
 }
 
-/* content-deco和concept-deco合併 */
-
 /* team */
 
-#team,
-#adviser{
-    margin-bottom: 150px;
-}
-
-.team-container{
+.team-container,
+.adviser-container{
     display: flex;
     margin: auto;
     width: 900px;
+}
+
+.team-container{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -319,13 +282,12 @@ h2{
     text-indent: 2px;
 }
 
-/* adviser */
-.adviser-container{
-    display: flex;
-    width: 900px;
-    margin: auto;
+.member .txt h3,
+.member .txt h4{
+    color: #ffde85;
 }
 
+/* adviser */
 .adviser-container .pic,
 .adviser-container .txt{
     text-align: center;
@@ -367,12 +329,10 @@ h2{
     margin-top: 1em;
     padding: 0 .75em ;
     transition: 1s;
-    /* text-overflow : ellipsis; */
 }
 
 .scroll-box{
     overflow: auto;
-    /* max-height: none; */
 }
 
 .adviser-box::-webkit-scrollbar{
@@ -481,6 +441,13 @@ h2{
         width: 700px;
     }
 
+    #concept .concept-title h1,
+    .content-title h1,
+    .team-title h1,
+    .adviser-title h1{
+        font-size: 50px;
+    }
+
     .concept-deco,
     .content-deco,
     .team-deco,
@@ -500,6 +467,14 @@ h2{
     #content{
         background-size: 90%;
     }
+
+    #content,
+    #team,
+    #adviser,
+    .slide-container{
+        margin-bottom: 100px;
+    }
+    
     .team-container{
         width: 750px;
     }
@@ -526,7 +501,9 @@ h2{
         font-size: 20px;
     }
     .breadcrumb ul li+li::before{
+        width: 1.5px;
         left: -2px;
+        bottom: 4px;
     }
 
     .breadcrumb ul li a::after{
@@ -575,24 +552,26 @@ h2{
         bottom: -55px;
         left: -5%;
     }
-
+    .content-title,
+    .team-title,
+    .adviser-title{
+        margin: 40px 0;
+    }
     #content{
         background: url('../bg and icon/bg_blue_balls.png') no-repeat center 50px;
         background-size: 100%;
     }
 
-    .slider{
+    #content,
+    #team,
+    #adviser,
+    .slide-container{
+        margin-bottom: 80px;
+    }
+
+    .swiper-container{
         width: 480px;
         height: 320px;
-    }
-    
-    .slides{
-        height: 320px;
-    }
-    
-    .navigation-manual,
-    .navigation-auto{
-        width: 480px;
     }
 
     .team-container,
@@ -600,16 +579,22 @@ h2{
     .link-container ul{
         width: 500px;
     }
-
+   
     .member{
         width: 220px;
+    }
+
+    .member .pic{
+        margin: 15px;
     }
 
     .member .txt h3,
     .adviser-container .txt h3{
         font-size: 20px;
     }
-    
+    .member .txt h4{
+        font-size: 18px;
+    }
     .adviser-container .txt h1{
         font-size: 32px;
     }
@@ -623,6 +608,10 @@ h2{
     }
     .share{
         margin-left: 40px;
+    }
+
+    .share a{
+        width: 30px;
     }
 
 }
@@ -647,7 +636,8 @@ h2{
         width: 74px;
     }
     .breadcrumb ul li:hover a,
-    .breadcrumb ul li a:hover::after{
+    .breadcrumb ul li a:hover::after,
+    .bc-m-hover{
         transform: translateY(4px);
     }
     #concept{
@@ -666,24 +656,84 @@ h2{
         font-size: 12px;
     }
 
-    .slider{
-        width: 300px;
-        height: 200px;
+    .concept-deco,
+    .content-deco,
+    .team-deco,
+    .adviser-deco{
+        width: 320px;
+        height: 50px;
+    }
+    .concept-deco,
+    .team-deco{
+        transform: scaleX(1);
+    }
+    .concept-deco{
+        background: url("../bg and icon/bg_line_p1.png") no-repeat center;
+        background-size: 130%;
+    }
+    .content-deco{
+        background: url("../bg and icon/bg_line_p2.png") no-repeat center;
+        background-size: 130%;
     }
     
-    .slides{
-        height: 200px;
+    .team-deco{
+        background: url("../bg and icon/bg_line_p3.png") no-repeat center;
+        background-size: 130%;
     }
     
-    .navigation-manual,
-    .navigation-auto{
+    .adviser-deco{
+        background: url("../bg and icon/bg_line_p4.png") no-repeat center;
+        background-size: 130%;
+    }
+    .concept-deco img,
+    .team-deco img{
+        transform: scaleX(1);
+    }
+    .concept-deco img{
+        width: 80px;
+        left:80%;
+    }
+    .concept-deco::after{
+        display: none;
+    }
+
+    .team-deco img{
+        width: 100px;
+        bottom: -20px;
+        left: 65%;
+    }
+    .team-deco img:hover{
+        bottom: -20px;
+        left: 65%;
+    }
+    
+    #content{
+        background: none;
+    }
+    .iframe-container iframe{
+        width: 320px;
+        height: 180px;
+    }
+
+    .swiper-container{
         width: 300px;
+        height: 200px;
     }
 
     .team-container,
     .adviser-container,
+    .link-container,
     .link-container ul{
         width: 320px;
+    }
+
+    .link-container{
+        display: flex;
+        margin: auto;
+    }
+    .link-container ul{
+        margin: -20px 20px 0 0;
+        justify-content: flex-end;
     }
 
     .member{
@@ -694,6 +744,9 @@ h2{
     .member .txt h3,
     .adviser-container .txt h3{
         font-size: 16px;
+    }
+    .member .txt h4{
+        font-size: 13px;
     }
     .adviser-container .pic,
     .adviser-container .txt{
@@ -706,5 +759,8 @@ h2{
   
     .share{
         margin-left: 40px;
+    }
+    .share::before{
+        display: none;
     }
 }

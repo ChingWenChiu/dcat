@@ -8,8 +8,8 @@ $(document).ready(function () {
         console.log('>768')
         
         $('.btn1').click(function(){
-            $("html,body").animate({ scrollTop: $('#concept').offset().top-120}, 800);
-            
+            $("html,body").animate({ scrollTop: $('#concept').offset().top-80}, 800);
+            // offset -120
         });
         $('.btn2').click(function(){
             $("html,body").animate({ scrollTop: $('#content').offset().top-80}, 800);
@@ -41,20 +41,43 @@ $(document).ready(function () {
             $("html,body").animate({ scrollTop: $('#adviser').offset().top-120}, 800);
             
         });
+        //remove ugly btn
+        $( ".swiper-button-next" ).remove();
+        $( ".swiper-button-prev" ).remove();
     }
     
 })
+//swiper.js start
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+});
+swiper.setGrabCursor()
+//swiper.js end
 
-// auto slide 
+// moblie hover
+$('.breadcrumb a').on("touchstart", bcmStart);
+$(".breadcrumb a").on("touchend", bcmEnd);
 
-// var counter = 1;
-// setInterval(function(){
-//     document.getElementById('radio' + counter).checked = true;
-//     counter++;
-//     if(counter > 3){
-//         counter =1;
-//     }
-// },5000);
+function bcmStart(event) {
+    $(this).addClass("bc-m-hover");
+}
+function bcmEnd(event) {
+    $(this).removeClass("bc-m-hover");
+}
 
 //防右鍵
 

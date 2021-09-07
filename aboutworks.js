@@ -8,7 +8,7 @@ var myAnchor = document.getElementsByClassName("myAnchor");
 $(document).ready(function () {
     $('.sub-title-1').click(function(){
         $("html,body").animate({ scrollTop: $('#multimedia').offset().top-120}, 800);
-        
+
     });
     $('.sub-title-2').click(function(){
         $("html,body").animate({ scrollTop: $('#theses').offset().top-140}, 800);
@@ -18,22 +18,21 @@ $(document).ready(function () {
         $('html,body').animate({scrollTop: $('.main-works-page').offset().top},500);
     });
 
-    
 })
 
+if($(window).width() > 768){
+    $('.sub-title a').on('mouseover',stmStart)
+    $('.sub-title a').on('mouseleave',stmEnd)
+    $('.item').on('mouseover',brightItem)
+    $('.item').on('mouseleave',unbrightItem)
+}else{
+    $('.item').on("touchstart",brightItem);
+    $('.item').on("touchend",unbrightItem);
+    $('.sub-title a').on("touchstart",stmStart);
+    $('.sub-title a').on("touchend",stmEnd);  
+}
 
-//work hover event
 
-$(function(){
-    
-    $('.item').mouseenter(function(){
-        $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(.6)");
-        
-    }); 
-    $(".item").mouseleave(function(){
-        $(this).css("-webkit-filter","brightness(1)").siblings().css("-webkit-filter","brightness(1)");	
-    });
-})
 
 function menuIn(){
     sidebar.style.display = "block";
@@ -63,13 +62,26 @@ function closeSide() {
     com_menu.style.pointerEvents = "auto";
 }
 
+function stmStart(){
+    $(this).addClass("st-m-hover");
+}
+
+function stmEnd(){
+    $(this).removeClass("st-m-hover");
+}
+function brightItem(){
+    $(this).siblings().addClass("filter");
+}
+function unbrightItem(){
+    $(this).siblings().removeClass("filter");
+}
 //防右鍵
 
-window.oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-}
+// window.oncontextmenu = function(event) {
+//     event.preventDefault()
+//     event.stopPropagation()
+//     return false
+// }
 
 //防拖拉
 window.ondragstart = function(event) {
