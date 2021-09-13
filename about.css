@@ -1,4 +1,4 @@
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: "Noto Serif TC";
 }
 
@@ -267,6 +267,49 @@ h1,h2,h3{
     margin:auto;
 }
 
+#teachers{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    bottom: 150px;
+}
+
+.teacherWord span{
+    font-size: 36px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+.teacher{
+    width: 100%;
+    margin: 100px auto 80px;
+    display: flex;
+}
+
+.teacher h4{
+    font-size: 30px;
+}
+
+.teacher p{
+    width: 350px;
+    font-size: 18px;
+}
+
+.teacherLeft{
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.teacherRight{
+    width: 50%;
+    text-align: left;
+    padding-left: 30px;
+}
+
 /* -----------------手機版----------------- */
 @media screen and (max-width:1024px){
     #idea{
@@ -325,6 +368,7 @@ h1,h2,h3{
     #teamBox{
         bottom: 100px;
         padding-top: 35px;
+        height: 650px;
     }
 
     #team{
@@ -346,6 +390,11 @@ h1,h2,h3{
 
     .crewBox h2, #crew_p{
         top: 20px;
+    }
+
+    #teachers{
+        padding-top: 150px;
+        bottom: 100px;
     }
 }
 
@@ -384,10 +433,6 @@ h1,h2,h3{
         font-size: 18px;
     }
 
-    #place{
-  
-    }
-
     .crewBox{
         width: 450px;
     }
@@ -410,6 +455,32 @@ h1,h2,h3{
         bottom: 77px;
         left: 30px;
     }
+
+    .teacher{
+        display: block;
+        width: 90%;
+        height: 400px;
+        margin: 70px auto 50px;
+    }
+
+    .teacherLeft{
+        width: 100%;
+        margin: 0 auto 25px;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    .teacherRight{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .teacher p{
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (max-width:500px){
@@ -550,6 +621,24 @@ h1,h2,h3{
 
     .phone_footer{
         padding-bottom: 0px;
+    }
+
+    .teacherWord img{
+        width: 50px;
+    }
+
+    .teacherWord span{
+        font-size: 30px;
+    }
+
+    .teacher h4{
+        font-size: 30px;
+    }
+
+    .teacher p{
+        font-size: 18px;
+        width: 280px;
+        margin-top: 20px;
     }
 
 }
