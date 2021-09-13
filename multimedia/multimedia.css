@@ -23,18 +23,26 @@ h2{
     font-family: "Noto Serif TC";
     color: #fff;
 }
-.work-title {
+.work-title,
+.theses-title{
     display: flex;
     user-select: none;
 }
-.work-title  h1{
-    font-size: 50px;
+.work-title  h1,
+.theses-title h1{
     letter-spacing: .5em;
     text-indent: .5em;
     padding: 20px 40px;
     margin: 100px auto 40px;
     background: url('../bg and icon/bg_board.png') no-repeat center 17px;
     background-size: 100%;
+}
+.work-title{
+    font-size: 50px;
+}
+.theses-title h1{
+    font-size: 45px;
+    padding-left: 60px;
 }
 .breadcrumb,
 .breadcrumb ul{
@@ -61,6 +69,10 @@ h2{
 .breadcrumb ul li a{
     display: block;
     transition: .1s ease-in-out;
+}
+.btn-author{
+    width: 136px;
+    text-align: center;
 }
 .breadcrumb ul li a::after{
     content: 'ˇ';
@@ -94,7 +106,9 @@ h2{
 }
 #concept .concept-title h1,
 .content-title h1,
+.abstract-title h1,
 .team-title h1,
+.author-title h1,
 .adviser-title h1{
     margin: 0;
     font-size: 60px;
@@ -104,6 +118,7 @@ h2{
 
 #concept .concept-txt,
 .member .txt p,
+.author .txt p,
 .adviser-box p{
     font-size: 18px;
     letter-spacing: 2px;
@@ -114,6 +129,7 @@ h2{
 /* some deco */
 
 .concept-deco,
+.concept-deco-t-ver,
 .content-deco,
 .team-deco,
 .adviser-deco{
@@ -125,12 +141,14 @@ h2{
 }
 
 .concept-deco,
+.concept-deco-t-ver,
 .team-deco{
     transform: scaleX(-1);
     position: relative;
 }
 
 .concept-deco img,
+.concept-deco-t-ver img,
 .concept-deco::after{
     width: 200px;
     position: absolute;
@@ -172,7 +190,9 @@ h2{
 }
 
 .content-title,
+.abstract-title,
 .team-title,
+.author-title,
 .adviser-title{
     display: block;
     text-align: center;
@@ -184,7 +204,9 @@ h2{
     background-size: 75%;
 }
 #content,
+#abstract,
 #team,
+#author,
 #adviser,
 .slide-container{
     margin-bottom: 150px;
@@ -250,6 +272,7 @@ h2{
 /* team */
 
 .team-container,
+.author-container,
 .adviser-container{
     display: flex;
     margin: auto;
@@ -261,28 +284,37 @@ h2{
     flex-wrap: wrap;
 }
 
-.member{
+.member,
+.author{
     width: 270px;
-    margin: 15px;
     text-align: center;
 }
-
-.member .pic{
+.member{
+    margin: 15px;
+}
+.author{
+    margin: auto;
+}
+.member .pic,
+.author .pic{
     margin: 30px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.member .pic img{
+.member .pic img,
+.author .pic img{
     width: 100%;
 }
 
-.member .txt{
+.member .txt
+.author .txt{
     letter-spacing: 2px;
     text-indent: 2px;
 }
 
 .member .txt h3,
+.author .txt h3,
 .member .txt h4{
     color: #ffde85;
 }
@@ -443,12 +475,15 @@ h2{
 
     #concept .concept-title h1,
     .content-title h1,
+    .abstract-title h1,
     .team-title h1,
+    .author-title h1,
     .adviser-title h1{
         font-size: 50px;
     }
 
     .concept-deco,
+    .concept-deco-t-ver,
     .content-deco,
     .team-deco,
     .adviser-deco{
@@ -456,6 +491,7 @@ h2{
     }
 
     .concept-deco img,
+    .concept-deco-t-ver img,
     .concept-deco::after{
         width: 150px;
     }
@@ -469,19 +505,25 @@ h2{
     }
 
     #content,
+    #abstract,
     #team,
+    #author,
     #adviser,
     .slide-container{
         margin-bottom: 100px;
     }
     
-    .team-container{
+    .team-container,
+    .author-container{
         width: 750px;
     }
 
     .member{
         width: 240px;
         margin: 5px;
+    }
+    .author{
+        width: 240px;
     }
     .adviser-container{
         width: 700px;
@@ -506,6 +548,7 @@ h2{
         bottom: 4px;
     }
 
+    .btn-author,
     .breadcrumb ul li a::after{
         width: 120px;
     }
@@ -518,12 +561,15 @@ h2{
     }
     #concept .concept-title h1,
     .content-title h1,
+    .abstract-title h1,
     .team-title h1,
+    .author-title h1,
     .adviser-title h1{
         font-size: 40px;
     }
     #concept .concept-txt,
     .member .txt p,
+    .author .txt p,
     .adviser-box p{
         font-size: 16px;
     }
@@ -531,6 +577,7 @@ h2{
         width: 65%;
     }
     .concept-deco,
+    .concept-deco-t-ver,
     .content-deco,
     .team-deco,
     .adviser-deco{
@@ -538,6 +585,7 @@ h2{
     }
 
     .concept-deco img,
+    .concept-deco-t-ver img,
     .concept-deco::after{
         width: 120px;
         left: calc(0% - 20px);
@@ -553,7 +601,9 @@ h2{
         left: -5%;
     }
     .content-title,
+    .abstract-title,
     .team-title,
+    .author-title,
     .adviser-title{
         margin: 40px 0;
     }
@@ -563,7 +613,9 @@ h2{
     }
 
     #content,
+    #abstract,
     #team,
+    #author,
     #adviser,
     .slide-container{
         margin-bottom: 80px;
@@ -575,20 +627,24 @@ h2{
     }
 
     .team-container,
+    .author-container,
     .adviser-container,
     .link-container ul{
         width: 500px;
     }
    
-    .member{
+    .member,
+    .author{
         width: 220px;
     }
 
-    .member .pic{
+    .member .pic,
+    .author .pic{
         margin: 15px;
     }
 
     .member .txt h3,
+    .author .txt h3,
     .adviser-container .txt h3{
         font-size: 20px;
     }
@@ -617,11 +673,11 @@ h2{
 }
 
 @media screen and (max-width:500px) {
-    .work-title  h1{
+    .work-title  h1,
+    .theses-title h1{
         font-size: 36px;
         margin-top: 60px;
     } 
-
     .breadcrumb ul li{
         font-size: 14px;
         letter-spacing: 4px;
@@ -632,6 +688,7 @@ h2{
         width: 1px;
     }
 
+    .btn-author,
     .breadcrumb ul li a::after{
         width: 74px;
     }
@@ -645,18 +702,22 @@ h2{
     }
     #concept .concept-title h1,
     .content-title h1,
+    .abstract-title h1,
     .team-title h1,
+    .author-title h1,
     .adviser-title h1{
         font-size: 30px;
     }
     
     #concept .concept-txt,
     .member .txt p,
+    .author .txt p,
     .adviser-box p{
         font-size: 12px;
     }
 
     .concept-deco,
+    .concept-deco-t-ver,
     .content-deco,
     .team-deco,
     .adviser-deco{
@@ -664,10 +725,12 @@ h2{
         height: 50px;
     }
     .concept-deco,
+    .concept-deco-t-ver,
     .team-deco{
         transform: scaleX(1);
     }
-    .concept-deco{
+    .concept-deco,
+    .concept-deco-t-ver{
         background: url("../bg and icon/bg_line_p1.png") no-repeat center;
         background-size: 130%;
     }
@@ -686,10 +749,12 @@ h2{
         background-size: 130%;
     }
     .concept-deco img,
+    .concept-deco-t-ver img,
     .team-deco img{
         transform: scaleX(1);
     }
-    .concept-deco img{
+    .concept-deco img,
+    .concept-deco-t-ver img{
         width: 80px;
         left:80%;
     }
@@ -721,6 +786,7 @@ h2{
     }
 
     .team-container,
+    .author-container,
     .adviser-container,
     .link-container,
     .link-container ul{
@@ -740,8 +806,12 @@ h2{
         width: 155px;
         margin: 2.5px;
     }
+    .author{
+        width: 155px;
+    }
 
     .member .txt h3,
+    .author .txt h3,
     .adviser-container .txt h3{
         font-size: 16px;
     }
