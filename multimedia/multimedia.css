@@ -469,6 +469,10 @@ h2{
 }
 
 @media screen and (max-width:1024px) {
+    .theses-title h1{
+        font-size: 36px;
+    }
+
     #concept{
         width: 700px;
     }
