@@ -34,8 +34,12 @@ h2{
     text-indent: .5em;
     padding: 20px 40px;
     margin: 100px auto 40px;
-    background: url('../bg and icon/bg_board.png') no-repeat center 17px;
+    background: url('../bg and icon/bg_board.png') no-repeat;
     background-size: 100%;
+}
+
+.wt-hd h1{
+    background-position: center 17px;
 }
 .work-title{
     font-size: 50px;
@@ -679,9 +683,16 @@ h2{
 @media screen and (max-width:500px) {
     .work-title  h1,
     .theses-title h1{
-        font-size: 36px;
+        font-size: 34px;
         margin-top: 60px;
     } 
+    .wt-ep h1,.wt-fa h1{
+        font-size: 28px;
+        padding: 20px;
+    }
+    .wt-fa h1{
+        background-position: center 10px;
+    }
     .breadcrumb ul li{
         font-size: 14px;
         letter-spacing: 4px;
@@ -768,11 +779,11 @@ h2{
 
     .team-deco img{
         width: 100px;
-        bottom: -20px;
+        bottom: -45px;
         left: 65%;
     }
     .team-deco img:hover{
-        bottom: -20px;
+        bottom: -45px;
         left: 65%;
     }
     

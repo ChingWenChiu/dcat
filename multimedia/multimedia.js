@@ -79,6 +79,9 @@ function bcmEnd(event) {
     $(this).removeClass("bc-m-hover");
 }
 
+//share link
+// var fbhtml_url=window.location.toString();
+
 //防右鍵
 
 // window.oncontextmenu = function(event) {
