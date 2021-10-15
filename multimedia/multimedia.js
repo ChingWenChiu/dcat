@@ -82,14 +82,6 @@ function bcmEnd(event) {
 //share link
 // var fbhtml_url=window.location.toString();
 
-//防右鍵
-
-// window.oncontextmenu = function(event) {
-//     event.preventDefault()
-//     event.stopPropagation()
-//     return false
-// }
-
 //防拖拉
 window.ondragstart = function(event) {
     event.preventDefault()
@@ -97,3 +89,6 @@ window.ondragstart = function(event) {
     return false
 }
 
+
+$("#header").load("../header.html");
+$("#footer").load("../footer.html");

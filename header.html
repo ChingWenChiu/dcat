@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="com_nav"> 
+
+        <div class="nav_left">
+
+            <a href="../index.html"><img src="../photo/logo.png" alt="logo"></a>
+        
+        </div>
+
+        <div class="nav_right">
+
+            <div class="nav_about">
+
+                <img src="../photo/fan.png" alt="fan" width="35px">
+
+                <a href="../about.html">關於展覽</a>
+
+            </div>
+
+            <div class="nav_about">
+
+                <img src="../photo/fan.png" alt="fan" width="35px">
+
+                <a href="../aboutworks.html">關於作品</a>
+                
+            </div>
+    
+        </div>
+
+    </nav>
+
+    <nav id="phone_nav">
+
+        <div id="myNav" class="phone_menu overlay">
+            
+            <a href="javascript:void(0)" onclick="closeNav()" style="margin-bottom:10px;position:relative;bottom:10px;">&times;</a>
+
+            <div class="overlay-content">
+                <a href="../index.html" style="position:relative;bottom:40px;">首頁</a>
+
+                <div class="about">
+
+                    <a href="../about.html" style="margin-bottom:10px;">關於展覽</a>
+
+                    <img src="../photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;">
+                
+                    <p><a href="../about.html#idea" id="font-size">展覽理念</a></p>
+                    <p><a href="../about.html#place" id="font-size">展覽地點</a></p>
+                    <p><a href="../about.html#team" id="font-size">籌備團隊</a></p>
+                    <p><a href="../about.html#teachers" id="font-size">班導師</a></p>
+
+                </div>
+                
+                <div class="aboutworks">
+                    <a href="../aboutworks.html"style="margin-bottom:10px;">關於作品</a>
+                    <img src="../photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;">
+                    
+                    <p><a href="../aboutworks.html#multimedia" id="font-size">多媒體</a></p>
+                    <p><a href="../aboutworks.html#theses" id="font-size" style="margin-bottom:30px;">論文</a></p>
+                
+                </div>
+                
+            </div>
+
+        </div>
+
+        <img id="phone_menu" src="../photo/menu_phone.png" alt="menu" width="150px" onclick="openNav()">
+
+        <a href="../index.html"><img id="phone_logo" src="../photo/logo.png" alt="logo" width="80px"></a>
+
+    </nav>
+
+    <div class="empty"></div>
+
+    <div id="sidebar"  onmouseleave="menuOut();">
+
+        <a href="javascript:void(0)" onclick="closeSide()" style="position:relative;left:150px;top:10px;">&times;</a>
+
+        <a href="../index.html" style="top:5%;">首頁</a>
+
+        <a href="../about.html" style="top:20%;">關於展覽</a>
+        <img src="../photo/menu_line.png" width="100%" style="position: absolute;top:29%;left:15%;">
+        <a href="../about.html#idea" style="top:33%;font-size:16px;">展覽理念</a>
+        <a href="../about.html#place" style="top:41%;font-size:16px;">展覽地點</a>
+        <a href="../about.html#team" style="top:49%;font-size:16px;">籌備團隊</a>
+        <a href="../about.html#teachers" style="top:57%;font-size:16px;">班導師</a>
+
+        <a href="../aboutworks.html" style="top:70%;">關於作品</a>
+        <img src="../photo/menu_line.png" width="100%" style="position: absolute;top:79%;left:15%;">
+        <a href="../aboutworks.html#multimedia" class="sub-title-1" style="top:82%;font-size:16px;">多媒體</a>
+        <a href="../aboutworks.html#theses" class="sub-title-2"  style="top:90%;font-size:16px;">論文</a>
+
+    </div>
+
+    <div id="com_menu">
+
+        <img id="menu" onmouseenter="menuIn();" src="../photo/menu.png" alt="menu" width="25px">
+   
+    </div>
+
+</body>
+<script>
+    var sidebar = document.getElementById("sidebar");
+    var menu = document.getElementById("menu");
+    var top = document.getElementById("top");
+    var com_menu = document.getElementById("com_menu");
+    var myAnchor = document.getElementsByClassName("myAnchor");
+    var wood1 =  document.getElementById("wood_1");
+        function menuIn(){
+        sidebar.style.display = "block";
+        sidebar.style.opacity = "1";
+        sidebar.style.left='0';
+        com_menu.style.pointerEvents = "none";
+        $(".theses1").css("z-index", "3");
+    }
+
+    function menuOut(){
+        sidebar.style.opacity ="0";
+        sidebar.style.left='-100%';
+        com_menu.style.pointerEvents = "auto";
+        $(".theses1").css("z-index", "150");
+    }
+
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+    function closeSide() {
+        sidebar.style.opacity = "0";
+        com_menu.style.pointerEvents = "auto";
+    }
+</script>
+</html>

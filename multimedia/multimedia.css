@@ -28,6 +28,7 @@ h2{
     display: flex;
     user-select: none;
 }
+
 .work-title  h1,
 .theses-title h1{
     letter-spacing: .5em;
@@ -40,8 +41,10 @@ h2{
 
 .wt-hd h1{
     background-position: center 17px;
+    /* background-size: 300px auto; */
 }
-.work-title{
+
+.work-title h1{
     font-size: 50px;
 }
 .theses-title h1{

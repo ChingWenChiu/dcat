@@ -74,3 +74,9 @@ window.ondragstart = function(event) {
     event.stopPropagation()
     return false
 }
+
+//load header and footer
+
+
+$("#header").load("../header.html");
+$("#footer").load("../footer.html");
