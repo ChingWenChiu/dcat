@@ -12,11 +12,11 @@ $(document).ready(function () {
             // offset -120
         });
         $('.btn2').click(function(){
-            $("html,body").animate({ scrollTop: $('#content').offset().top-80}, 800);
+            $("html,body").animate({ scrollTop: $('#abstract').offset().top-80}, 800);
             
         });
         $('.btn3').click(function(){
-            $("html,body").animate({ scrollTop: $('#team').offset().top-80}, 800);
+            $("html,body").animate({ scrollTop: $('#author').offset().top-80}, 800);
             
         });
         $('.btn4').click(function(){
@@ -30,11 +30,11 @@ $(document).ready(function () {
             
         });
         $('.btn2').click(function(){
-            $("html,body").animate({ scrollTop: $('#content').offset().top-120}, 800);
+            $("html,body").animate({ scrollTop: $('#abstract').offset().top-120}, 800);
             
         });
         $('.btn3').click(function(){
-            $("html,body").animate({ scrollTop: $('#team').offset().top-120}, 800);
+            $("html,body").animate({ scrollTop: $('#author').offset().top-120}, 800);
             
         });
         $('.btn4').click(function(){
@@ -47,26 +47,7 @@ $(document).ready(function () {
     }
     
 })
-//swiper.js start
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-});
-swiper.setGrabCursor()
-//swiper.js end
+
 
 // moblie hover
 $('.breadcrumb a').on("touchstart", bcmStart);
@@ -79,8 +60,13 @@ function bcmEnd(event) {
     $(this).removeClass("bc-m-hover");
 }
 
-//share link
-// var fbhtml_url=window.location.toString();
+//防右鍵
+
+// window.oncontextmenu = function(event) {
+//     event.preventDefault()
+//     event.stopPropagation()
+//     return false
+// }
 
 //防拖拉
 window.ondragstart = function(event) {
@@ -88,6 +74,8 @@ window.ondragstart = function(event) {
     event.stopPropagation()
     return false
 }
+
+//load header and footer
 
 
 $("#header").load("../header.html");

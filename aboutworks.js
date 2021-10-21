@@ -32,8 +32,6 @@ if($(window).width() > 768){
     $('.sub-title a').on("touchend",stmEnd);  
 }
 
-
-
 function menuIn(){
     sidebar.style.display = "block";
     sidebar.style.opacity = "1";
