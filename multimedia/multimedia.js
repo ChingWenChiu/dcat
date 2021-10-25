@@ -1,7 +1,6 @@
 $(document).ready(function () {
-   
     $('#top').click(function(){
-        $('html,body').animate({scrollTop: $('.main-multimedia-page').offset().top},500);
+        $('html,body').animate({scrollTop: $('html,body').offset().top},500);
     });
 
     if($(window).width() > 768){
@@ -47,6 +46,8 @@ $(document).ready(function () {
     }
     
 })
+
+
 //swiper.js start
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
