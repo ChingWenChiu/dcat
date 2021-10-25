@@ -1,3 +1,7 @@
+h1,h2,h3,h4{
+    font-family: "Noto Serif TC";
+}
+
 a{
     text-decoration: none;
 }
@@ -223,7 +227,7 @@ iframe{
 
     h1{
         font-size: 24px;
-        margin-bottom: 25px;
+        margin-bottom: 0;
     }
 
     .phone_woodUp,.phone_woodDown{
