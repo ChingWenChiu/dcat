@@ -430,4 +430,8 @@ iframe{
         height: 162px;
         margin: 0 auto 25px;
     }
+
+    .video p{
+        font-size: 12px;
+    }
 }
