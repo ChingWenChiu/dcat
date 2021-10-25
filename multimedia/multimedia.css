@@ -362,6 +362,7 @@ h2{
 }
 
 .adviser-box{
+    text-align: left;
     flex-grow: 1;
     max-height: 200px;
     overflow: auto;
