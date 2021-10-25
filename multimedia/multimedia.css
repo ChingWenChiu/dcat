@@ -27,22 +27,22 @@ h2{
 .theses-title{
     display: flex;
     user-select: none;
+    width: 600px;
+    /* height: 300px; */
+    padding: 20px 40px;
+    margin: 100px auto 40px;
+    background: url('../bg and icon/bg_board.png') no-repeat; 
+    background-size: 100%;
 }
 
 .work-title  h1,
 .theses-title h1{
     letter-spacing: .5em;
     text-indent: .5em;
-    padding: 20px 40px;
-    margin: 100px auto 40px;
-    background: url('../bg and icon/bg_board.png') no-repeat;
-    background-size: 100%;
+    margin: auto;
 }
 
-.wt-hd h1{
-    background-position: center 17px;
-    /* background-size: 300px auto; */
-}
+
 
 .work-title h1{
     font-size: 50px;
@@ -362,6 +362,7 @@ h2{
 }
 
 .adviser-box{
+    text-align: left;
     flex-grow: 1;
     max-height: 200px;
     overflow: auto;
@@ -629,7 +630,7 @@ h2{
     #author,
     #adviser,
     .slide-container{
-        margin-bottom: 80px;
+        margin-bottom: 120px;
     }
 
     .swiper-container{
@@ -684,18 +685,17 @@ h2{
 }
 
 @media screen and (max-width:500px) {
+    .work-title,
+    .theses-title{
+        width: 300px;
+        padding: 20px 0;
+        margin-top: 60px;
+    }
     .work-title  h1,
     .theses-title h1{
-        font-size: 34px;
-        margin-top: 60px;
-    } 
-    .wt-ep h1,.wt-fa h1{
         font-size: 28px;
-        padding: 20px;
-    }
-    .wt-fa h1{
-        background-position: center 10px;
-    }
+    } 
+    
     .breadcrumb ul li{
         font-size: 14px;
         letter-spacing: 4px;
@@ -782,11 +782,11 @@ h2{
 
     .team-deco img{
         width: 100px;
-        bottom: -45px;
+        bottom: -30px;
         left: 65%;
     }
     .team-deco img:hover{
-        bottom: -45px;
+        bottom: -30px;
         left: 65%;
     }
     
@@ -796,6 +796,10 @@ h2{
     .iframe-container iframe{
         width: 320px;
         height: 180px;
+    }
+
+    .oo_bt img{
+        width: 300px;
     }
 
     .swiper-container{
