@@ -48,8 +48,17 @@ h2{
     font-size: 50px;
 }
 .theses-title h1{
-    font-size: 45px;
-    padding-left: 60px;
+    font-size: 40px;
+    padding-left: 25px;
+}
+.theses-title.tt2{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.theses-title.tt2 h1{
+    font-size: 28px;
+    padding-left: 15px;
+    text-indent: 0;
 }
 .breadcrumb,
 .breadcrumb ul{
@@ -124,6 +133,7 @@ h2{
 }
 
 #concept .concept-txt,
+#abstract .abstract-txt,
 .member .txt p,
 .author .txt p,
 .adviser-box p{
@@ -132,6 +142,12 @@ h2{
 }
 #concept .concept-txt{
     width: 60%;
+}
+#abstract .abstract-txt{
+    display: flex;
+    overflow: auto;
+    padding: 0 0.75em;
+    margin: auto;
 }
 /* some deco */
 
@@ -155,7 +171,6 @@ h2{
 }
 
 .concept-deco img,
-.concept-deco-t-ver img,
 .concept-deco::after{
     width: 200px;
     position: absolute;
@@ -177,8 +192,33 @@ h2{
     opacity: 0;
 }
 
+.cdt1,
+.cdt2{
+    position: absolute; 
+    transform: scaleX(-1);
+    transition: .3s;
+}
+.cdt1{
+    width: 80px;
+    bottom: -5px;
+    left: calc(0% - 70px);
+}
+.cdt2{
+    width: 200px;
+    bottom: -30px;
+    left: calc(0% - 50px);
+}
+
 .content-deco{
     margin-top: 10px;
+    position: relative;
+}
+
+.content-deco img{
+    position: absolute;
+    width: 250px;
+    left: -50px;
+    bottom: -25px;
 }
 
 
@@ -194,6 +234,10 @@ h2{
 .team-deco img:hover{
     bottom: -50px;
     left: -5%;
+}
+
+.team-deco.tdt img{
+    bottom: -65px;
 }
 
 .content-title,
@@ -229,10 +273,10 @@ h2{
 :root {
     --swiper-theme-color: #fff;
 }
+.abstract-txt,
 .swiper-container {
     width: 600px;
     height: 400px;
-    /* overflow: hidden; */
     position: relative;
 }
 
@@ -374,17 +418,22 @@ h2{
 .scroll-box{
     overflow: auto;
 }
-
+.abstract-txt::-webkit-scrollbar,
 .adviser-box::-webkit-scrollbar{
     width: 2px;
 }
+.abstract-txt::-webkit-scrollbar-track,
 .adviser-box::-webkit-scrollbar-track{
     background: transparent;
 }
+
+.abstract-txt::-webkit-scrollbar-thumb,
 .adviser-box::-webkit-scrollbar-thumb{
     background: rgb(211, 209, 209);
     border-radius: 5px;
 }
+
+.abstract-txt::-webkit-scrollbar-thumb:hover,
 .adviser-box::-webkit-scrollbar-thumb:hover{
     background: #fff;
 }
@@ -493,7 +542,7 @@ h2{
     .adviser-title h1{
         font-size: 50px;
     }
-
+    
     .concept-deco,
     .concept-deco-t-ver,
     .content-deco,
@@ -503,13 +552,16 @@ h2{
     }
 
     .concept-deco img,
-    .concept-deco-t-ver img,
     .concept-deco::after{
         width: 150px;
     }
 
     .concept-deco::after{
         height: 154.8px;
+    }
+
+    .content-deco img{
+        width: 200px;
     }
 
     #content{
@@ -580,6 +632,7 @@ h2{
         font-size: 40px;
     }
     #concept .concept-txt,
+    #abstract .abstract-txt,
     .member .txt p,
     .author .txt p,
     .adviser-box p{
@@ -597,7 +650,6 @@ h2{
     }
 
     .concept-deco img,
-    .concept-deco-t-ver img,
     .concept-deco::after{
         width: 120px;
         left: calc(0% - 20px);
@@ -607,10 +659,26 @@ h2{
         height: 123.84px;
     }
 
+    .cdt1{
+        width: 60px;
+    }
+    .cdt2{
+        width: 150px;
+    }
+
+    .content-deco img{
+        width: 150px;
+        bottom: -30px;
+    }
+
     .team-deco img{
         width: 150px;
         bottom: -55px;
         left: -5%;
+    }
+
+    .team-deco.tdt img{
+        bottom: -30px;
     }
     .content-title,
     .abstract-title,
@@ -632,7 +700,8 @@ h2{
     .slide-container{
         margin-bottom: 120px;
     }
-
+   
+    #abstract .abstract-txt,
     .swiper-container{
         width: 480px;
         height: 320px;
@@ -691,10 +760,25 @@ h2{
         padding: 20px 0;
         margin-top: 60px;
     }
-    .work-title  h1,
-    .theses-title h1{
+    .theses-title{
+        padding: 10px 0;
+    }
+    .work-title  h1{
         font-size: 28px;
     } 
+    .theses-title h1{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+
+    .theses-title.tt2{
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .theses-title.tt2 h1{
+        font-size: 14px;
+        padding-left: 28px;
+    }
     
     .breadcrumb ul li{
         font-size: 14px;
@@ -728,6 +812,7 @@ h2{
     }
     
     #concept .concept-txt,
+    #abstract .abstract-txt,
     .member .txt p,
     .author .txt p,
     .adviser-box p{
@@ -771,13 +856,29 @@ h2{
     .team-deco img{
         transform: scaleX(1);
     }
-    .concept-deco img,
-    .concept-deco-t-ver img{
+    .concept-deco img{
         width: 80px;
         left:80%;
     }
     .concept-deco::after{
         display: none;
+    }
+
+    .cdt1{
+        width: 40px;
+        bottom: 20px;
+        left: 80%;
+    }
+    .cdt2{
+        width: 100px;
+        bottom: 10px;
+        left: 55%;
+    }
+
+    .content-deco img{
+        width: 100px;
+        left: 70%;
+        bottom: 10px;
     }
 
     .team-deco img{
@@ -788,6 +889,11 @@ h2{
     .team-deco img:hover{
         bottom: -30px;
         left: 65%;
+    }
+
+    .team-deco.tdt img{
+        bottom: -10px;
+        left: 0%;
     }
     
     #content{
@@ -801,7 +907,7 @@ h2{
     .oo_bt img{
         width: 300px;
     }
-
+    #abstract .abstract-txt,
     .swiper-container{
         width: 300px;
         height: 200px;
