@@ -1,4 +1,4 @@
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
     font-family: "Noto Serif TC";
 }
 
@@ -291,6 +291,12 @@ h1,h2,h3,h4{
 
 .teacher h4{
     font-size: 30px;
+    margin: 0;
+}
+
+.teacher h5{
+    font-size: 22px;
+    margin: 5px;
 }
 
 .teacher p{
@@ -306,12 +312,24 @@ h1,h2,h3,h4{
 
 .teacherRight{
     width: 50%;
-    text-align: left;
+    text-align: center;
     padding-left: 30px;
     height: 350px;
     display: flex;
     align-items: center;
     line-height: 2;
+}
+
+.teacherRight p{
+    text-align: left;
+}
+
+.teacherRight h4:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    display: block;
 }
 
 /* -----------------手機版----------------- */
@@ -463,7 +481,7 @@ h1,h2,h3,h4{
     .teacher{
         display: block;
         width: 90%;
-        height: 500px;
+        height: 550px;
         margin: 70px auto 50px;
     }
 
@@ -475,7 +493,7 @@ h1,h2,h3,h4{
     }
 
     .teacherRight{
-        width: 100%;
+        width: 300px;
         margin: 0 auto;
         text-align: center;
         padding-left: 0px;
@@ -483,7 +501,8 @@ h1,h2,h3,h4{
     }
 
     .teacher p{
-        margin: 0 auto;
+        margin: 25px auto;
+        width: 300px;
     }
 
 }
