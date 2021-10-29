@@ -327,6 +327,7 @@ img[alt="丸子串"]:hover+img,
     /* 多媒體&論文標題 */
     .multimedia-title,
     .theses-title{
+        width: inherit;
         text-align: center;
         margin: 30px auto;
     }

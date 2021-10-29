@@ -28,18 +28,25 @@ h2{
     display: flex;
     user-select: none;
     width: 600px;
-    /* height: 300px; */
     padding: 20px 40px;
     margin: 100px auto 40px;
     background: url('../bg and icon/bg_board.png') no-repeat; 
     background-size: 100%;
 }
 
+.wt-s{
+    width: 630px;
+}
 .work-title  h1,
 .theses-title h1{
     letter-spacing: .5em;
     text-indent: .5em;
     margin: auto;
+}
+
+.wt-s h1{
+    letter-spacing: 0.1em;
+    text-indent: 0.1em ;
 }
 
 
@@ -759,6 +766,9 @@ h2{
         width: 300px;
         padding: 20px 0;
         margin-top: 60px;
+    }
+    .wt-s{
+        width: 330px;
     }
     .theses-title{
         padding: 10px 0;
