@@ -35,7 +35,8 @@ h2{
 }
 .works-nav  h1,
 .multimedia-title h1,
-.theses-title h1 {
+.theses-title h1,
+.spex-title h1{
     font-size: 60px;
 }
 .works-nav  h1{
@@ -129,7 +130,7 @@ h2{
     transform: translate(40px,-60px);
 }
 .main-theses .board{
-    width: 80%;
+    width: 60%;
     background: url('bg and icon/bg_theses.png') center center;
     background-size: 100%;
 }
@@ -137,13 +138,13 @@ h2{
 .main-theses .deco :first-child{
     position: absolute;
     width: 300px;
-    right: calc(20% - 25px);
+    right: calc(40% - 25px);
     top: -75px;
 }
 .main-theses .deco :last-child{
     position: absolute;
     height: 480px;
-    right: calc(20% - 300px);
+    right: calc(40% - 300px);
     top: -490px;
     transition: .3s;
 }
@@ -313,6 +314,9 @@ img[alt="丸子串"]:hover+img,
         left: calc(20% - 50px);
         transform:rotate(15deg)
     }
+    .main-theses .board{
+        width: 80%;
+    }
     .main-theses .deco :first-child{
         width: 140px;
         right: calc(20% - 40px);
@@ -327,11 +331,12 @@ img[alt="丸子串"]:hover+img,
     /* 多媒體&論文標題 */
     .multimedia-title,
     .theses-title{
+        width: inherit;
         text-align: center;
         margin: 30px auto;
     }
     .multimedia-title h1,
-    .theses-title h1 {
+    .theses-title h1{
         font-size: 36px;
     }
     .multimedia-title h2,
