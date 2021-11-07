@@ -48,6 +48,7 @@ h1,h2,h3,h4,h5{
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
+    height: 950px;
 }
 
 #en-h2{
@@ -363,6 +364,10 @@ h1,h2,h3,h4,h5{
         right: -70px;
     }
 
+    #place{
+        height: 1300px;
+    }
+
     .com_map_word{
         display: none;
     }
@@ -433,6 +438,10 @@ h1,h2,h3,h4,h5{
     .br{
         display: block;
         height: 14px;
+    }
+
+    #place{
+        height: 1100px;
     }
 
     .map{
@@ -546,6 +555,10 @@ h1,h2,h3,h4,h5{
         width: 80px;
         top:-60px;
         right: -50px;
+    }
+
+    #place{
+        height: 850px;
     }
 
     .mapBox{
